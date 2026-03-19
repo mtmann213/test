@@ -86,38 +86,38 @@
 
 ## Phase 4: The Vignette - Project Opal Vanguard
 
-## Slide 10: The Evolution: Tactical SDR to Neural Receiver
-- **Key Message:** Project Opal Vanguard is a high-resiliency tactical transceiver, not just a lab experiment.
-- **Visual Idea:** A high-level block diagram showing the evolution from a simple GNU Radio flowgraph to a multi-waveform (GFSK, DQPSK, CCSK, CSS) system.
+## Slide 10: The Objective: A Custom 2-Way Protocol
+- **Key Message:** The core of Project Opal Vanguard is the engineering of a ground-up, fully customizable tactical communication protocol.
+- **Visual Idea:** A flowchart showing the Link Layer (Session Manager, Packetizer, Depacketizer) and the flow of a 2-way SYN -> ACK handshake.
 - **Talking Points:**
-    - The challenge was moving from idealized simulations to a field-ready transceiver.
-    - **Key Specs:** 120-byte tactical blocks with 15-row matrix interleaving for error resiliency.
-    - **Security:** AES-CTR crypto-sync and NRZ-I phase resilience to survive signal fading.
-    - **The Physics Bottleneck:** Dealing with the USRP "Tag Paradox" (timing/scaling errors) and the CFO-induced "Donut" constellations that confuse standard AI models.
+    - We aren't just using off-the-shelf standards; we've built a **Tactical Protocol** from the bit-level up.
+    - **Session Management:** Developed autonomous SYN -> ACK handshakes with random-backoff to ensure stable 2-way links in high-collision environments.
+    - **Physical Hardening:** 120-byte tactical blocks with self-healing headers and 32-bit Hamming syncwords to ensure links stay up even during signal fading.
+    - **The Challenge:** Balancing absolute protocol integrity with the "Physics Bottleneck" of USRP hardware timing and frequency drift.
 
-## Slide 11: The AI Solution: Breaking the Bottleneck
-- **Key Message:** Gemini wasn't just writing boilerplate; it was solving complex signal processing logic.
-- **Visual Idea:** A "Before vs. After" comparison of constellation diagrams (Donuts vs. Blobs) and a code snippet showing a NumPy vectorized operation.
+## Slide 11: The AI Solution: Protocol Engineering at Speed
+- **Key Message:** Gemini was a force multiplier for link-layer logic and high-speed DSP optimization.
+- **Visual Idea:** A "Speed of Iteration" chart or a code snippet showcasing a NumPy-vectorized interleaver.
 - **Talking Points:**
-    - **Super-Vectorization:** Replacing thousands of nested Python loops with NumPy matrix-matrix multiplications (`np.dot`), reducing CPU overhead by 90%.
-    - **FFT-Lock Frequency Estimation:** Using AI-assisted DSP code to lock onto a 50kHz pilot, transforming unreadable "donuts" into mod-distinguishable "blobs."
-    - **Threaded Offload:** Decoupling the fast syncword search from heavy FEC/CCSK math to allow for real-time 2.0 Msps operation.
+    - **Link-Layer Optimization:** Replaced slow Python bit-loops with NumPy-vectorized matrix operations, achieving a 90% CPU reduction in the "hot path."
+    - **Adaptive Waveforms:** Rapidly developed and tested a library of waveforms (GFSK, DBPSK, and ultra-resilient CSS) using AI-assisted code generation.
+    - **Threaded Offload:** Decoupled the time-sensitive syncword search from heavy link-layer math (RS-FEC/CCSK), enabling fluid 2-way operation at 2.0 Msps.
 
 ## Slide 12: Vanguard Data Factory (VDF) & Specter's Edge
-- **Key Message:** Training on real-world "dirty" data is the only way to reach mission-ready status.
-- **Visual Idea:** A photo or graphic of the "Hardware Trinity": 3x USRPs (TX, RX, and Adversary) working in sync.
+- **Key Message:** Protocol validation requires industrial-scale "Reality Testing."
+- **Visual Idea:** A high-level diagram of the "Hardware Trinity": 3 USRPs (TX, RX, and Adversary) testing the 2-way link in a loop.
 - **Talking Points:**
-    - **VDF:** An automated pipeline for industrial-scale data harvesting.
-    - **Mission: Specter's Edge:** A "Mega-Harvest" of 250,000+ snapshots of real-world hardware data.
-    - This diversity (sweeping gains, drift levels, and offsets) ensures the model doesn't just learn a lab environment—it learns the "Reality of the Wire."
+    - **VDF:** A fully automated pipeline for stress-testing the protocol under real-world hardware conditions.
+    - **Mission: Specter's Edge:** 250,000+ snapshots captured across sweeping gains, drift levels, and interference profiles.
+    - **The Result:** We didn't just build a protocol; we built an **industrial validation engine** to ensure that protocol is bulletproof on the wire.
 
-## Slide 13: Impact & Results
-- **Key Message:** We achieved Level 9 "Deep Shadow" and stabilized the entire tactical baseline.
-- **Visual Idea:** A 100% pass mark for the 18-point regression suite.
+## Slide 13: Impact: From Prototype to Production
+- **Key Message:** A fully functional, production-ready 2-way tactical link achieved at record speed.
+- **Visual Idea:** A 100% logic accuracy confirmation (18-point regression suite pass).
 - **Talking Points:**
-    - **Level 9 Realized:** Chirp Spread Spectrum (CSS) is now operational and ultra-resilient.
-    - **Efficiency:** The time to generate a full mission dataset and refine a model has dropped from months to hours.
-    - **Status:** Level 7 OFDM Master and Level 9 CSS Master status officially achieved.
+    - **Level 9 Realized:** The protocol now supports ultra-resilient Chirp Spread Spectrum (CSS) for "Deep Shadow" operations.
+    - **Final State:** A fully customizable, 2-way tactical communication system that is resilient, authenticated (AES-CTR), and field-ready.
+    - **The Conclusion:** This is the direct result of applying a disciplined AI/ML approach to the deepest layers of RF engineering.
 
 ---
 

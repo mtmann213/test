@@ -107,42 +107,42 @@ footer: "Unclassified"
 
 <!-- _header: "Phase 4: The Vignette - Project Opal Vanguard" -->
 
-# The Evolution: Tactical SDR to Neural Receiver
+# The Objective: A Custom 2-Way Protocol
 
-* **The Challenge:** Transitioning from fragile GRC-only designs to a **Resilient Tactical Transceiver**.
-* **Key Specs:** 
-    - **Waveforms:** GFSK, DQPSK, CCSK, and **Level 9: Deep Shadow (CSS)**.
-    - **Timing:** 120-byte tactical blocks with 15-row matrix interleaving.
-    - **Hardening:** AES-CTR crypto-sync, Reed-Solomon FEC, and NRZ-I phase resilience.
-* **The Physics Bottleneck:** USRP "Tag Paradox" and CFO-induced "Donut" constellations.
+* **The Mission:** Building a ground-up, fully customizable **Tactical Communication Protocol**.
+* **Key Architecture:**
+    - **Session Management:** Autonomous **SYN -> ACK** handshakes with random-backoff to prevent collisions.
+    - **Timing & Sync:** 32-bit Hamming syncwords (2-bit tolerance) to survive real-world signal fading.
+    - **Structure:** 120-byte tactical blocks with self-healing headers and full-block CRC protection.
+* **The "Physics Bottleneck":** Eliminating USRP "Tag Paradox" and CFO-induced "Donut" constellations.
 
 ---
 
-# The AI Solution: Breaking the Bottleneck
+# The AI Solution: Protocol Engineering at Speed
 
 * **Surgical Logic (Gemini CLI Assisted):**
     - **Super-Vectorization:** Replaced thousands of Python loops with **NumPy Matrix Operations** (90% CPU reduction).
-    - **FFT-Lock Frequency Estimation:** Transformed "Donuts" into "Blobs" by locking onto the 50kHz pilot spectrum.
-    - **Threaded Offload:** Decoupled syncword search from heavy RS-FEC/CCSK math for fluid 2.0 Msps operation.
+    - **Adaptive Waveforms:** Rapidly prototyping and switching between **GFSK, DBPSK, and Level 9 CSS (Deep Shadow)**.
+    - **Threaded Offload:** Decoupled syncword search from heavy RS-FEC/CCSK math for fluid 2-way operation at 2.0 Msps.
 
 ---
 
 # Vanguard Data Factory (VDF) & Specter's Edge
 
-* **The "Hardware Trinity":** Automated 3x USRP array (TX, RX, Adversary) for industrial-scale data harvesting.
+* **The "Hardware Trinity":** Automated 3x USRP array (TX, RX, Adversary) for industrial-scale protocol validation.
 * **Mission: Specter's Edge:** 
     - **The Mega-Harvest:** 250,000+ snapshots of "dirty" real-world hardware data.
     - **Diversity:** Sweeping 24 Classes x 4 Gains x 3 Drift levels x 3 Offsets.
-* **Result:** A model trained on the "Reality of the Wire," not just idealized simulations.
+* **Result:** A protocol hardened against the "Reality of the Wire," not just idealized simulations.
 
 ---
 
-# Impact & Results
+# Impact: From Prototype to Production
 
-* **Level 9 "Deep Shadow" Realized:** Ultra-resilient Chirp Spread Spectrum (CSS) operational.
-* **Speed to Mission:** Dataset generation and model refinement reduced from **months to hours**.
-* **Stability:** 100% bit-perfect logic verified via 18-point regression suite.
-* **Success:** Level 7 OFDM Master and Level 9 CSS Master status achieved.
+* **Level 9 "Deep Shadow" Realized:** Ultra-resilient Chirp Spread Spectrum (CSS) now fully operational.
+* **Speed to Mission:** Protocol iteration and model refinement reduced from **months to hours**.
+* **Integrity:** 100% bit-perfect logic verified via 18-point regression suite.
+* **Final State:** A fully customizable, 2-way tactical link that achieves Level 7 OFDM and Level 9 CSS Master status.
 
 ---
 
