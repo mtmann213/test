@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opal Vanguard - Commander Dashboard</title>
+    <script src="{{ url_for('static', filename='chart.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>OPAL VANGUARD // COMMANDER DASHBOARD <span id="mission-id-header" style="color: #ffcc00; margin-left: 20px; font-size: 0.8em;"></span></h1>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <button id="clear-btn" class="status-indicator offline" style="background: transparent; cursor: pointer; font-size: 14px; font-family: inherit;">WIPE TELEMETRY</button>
+            <div id="connection-status" class="status-indicator online">LIVE</div>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <!-- Top Metrics Row -->
+        <div class="card metric-card">
+            <h3>MISSION SUCCESS RATE</h3>
+            <div id="success-rate" class="metric-value">--%</div>
+        </div>
+        
+        <div class="card metric-card">
+            <h3>AVERAGE CONFIDENCE</h3>
+            <div id="avg-confidence" class="metric-value">--%</div>
+        </div>
+
+        <div class="card metric-card">
+            <h3>SIGNAL STRENGTH (RSSI)</h3>
+            <div id="rssi-value" class="metric-value">-- dBm</div>
+        </div>
+        
+        <div class="card metric-card" id="classification-card">
+            <h3>PREDICTED MODULATION</h3>
+            <div id="top-prediction" class="metric-value" style="color: #ffcc00;">IDLE</div>
+        </div>
+
+        <!-- AI Inference Visualizer -->
+        <div class="card chart-container span-full" style="height: 250px;">
+            <h3>AI DETECTION GAUGE (TOP 5 CONFIDENCE)</h3>
+            <canvas id="predictionChart"></canvas>
+        </div>
+
+        <!-- Main Charts -->
+        <div class="card chart-container">
+            <h3>SIGNAL CONFIDENCE OVER TIME</h3>
+            <canvas id="confidenceChart"></canvas>
+        </div>
+
+        <div class="card chart-container">
+            <h3>IQ CONSTELLATION (PHOSPHOR)</h3>
+            <canvas id="constellationChart" width="300" height="300" style="display: block; margin: auto; background: #000; border: 1px solid #333;"></canvas>
+        </div>
+
+        <div class="card chart-container span-full">
+            <h3>CHANNEL ACTIVITY & HEALTH (AFH)</h3>
+            <canvas id="channelChart"></canvas>
+        </div>
+
+        <!-- Event Log -->
+        <div class="card log-container span-full">
+            <h3>TACTICAL EVENT LOG</h3>
+            <div class="log-window" id="event-log">
+                <!-- Logs injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Chart Configuration
+        Chart.defaults.color = '#00ffcc';
+        Chart.defaults.font.family = "'Share Tech Mono', monospace";
+        
+        const confCtx = document.getElementById('confidenceChart').getContext('2d');
+        const confidenceChart = new Chart(confCtx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Confidence %',
+                        data: [],
+                        borderColor: '#00ffcc',
+                        backgroundColor: 'rgba(0, 255, 204, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Jammer Strikes',
+                        type: 'scatter',
+                        data: [],
+                        backgroundColor: '#ff3333',
+                        pointStyle: 'crossRot',
+                        pointRadius: 8,
+                        pointBorderWidth: 3,
+                        borderColor: '#ff3333'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { min: 0, max: 100, grid: { color: 'rgba(0, 255, 204, 0.1)' } },
+                    x: { display: false, grid: { color: 'rgba(0, 255, 204, 0.1)' } }
+                },
+                animation: { duration: 0 }
+            }
+        });
+
+        const chanCtx = document.getElementById('channelChart').getContext('2d');
+        const channelChart = new Chart(chanCtx, {
+            type: 'bar',
+            data: {
+                labels: Array.from({length: 51}, (_, i) => i),
+                datasets: [
+                    { label: 'Successful Packets', data: Array(51).fill(0), backgroundColor: 'rgba(0, 255, 204, 0.8)' },
+                    { label: 'Failed Packets', data: Array(51).fill(0), backgroundColor: 'rgba(255, 51, 51, 0.8)' }
+                ]
+            },
+            options: { responsive: true, maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }, animation: { duration: 0 } }
+        });
+
+        const predCtx = document.getElementById('predictionChart').getContext('2d');
+        const predictionChart = new Chart(predCtx, {
+            type: 'bar',
+            data: {
+                labels: ['NONE', 'NONE', 'NONE', 'NONE', 'NONE'],
+                datasets: [{
+                    label: 'Confidence %',
+                    data: [0, 0, 0, 0, 0],
+                    backgroundColor: ['rgba(0, 255, 204, 0.8)', 'rgba(0, 255, 204, 0.6)', 'rgba(0, 255, 204, 0.4)', 'rgba(0, 255, 204, 0.2)', 'rgba(0, 255, 204, 0.1)'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: { x: { min: 0, max: 100, grid: { color: 'rgba(0, 255, 204, 0.1)' } }, y: { grid: { display: false } } },
+                animation: { duration: 200 }
+            }
+        });
+
+        // Constellation Canvas with Phosphor Persistence
+        const constCanvas = document.getElementById('constellationChart');
+        const constCtx = constCanvas.getContext('2d');
+
+        function drawConstellation(b64data) {
+            const binary = atob(b64data);
+            const bytes = new Uint8Array(binary.length);
+            for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+            const floats = new Float32Array(bytes.buffer);
+            
+            constCtx.fillStyle = "rgba(0, 0, 0, 0.15)"; 
+            constCtx.fillRect(0, 0, constCanvas.width, constCanvas.height);
+            
+            constCtx.fillStyle = "#00ffcc";
+            const center = constCanvas.width / 2;
+            const scale = (constCanvas.width / 2) * 0.8;
+            
+            for (let i = 0; i < floats.length; i += 2) {
+                const x = center + floats[i] * scale;
+                const y = center - floats[i+1] * scale;
+                constCtx.fillRect(x, y, 2, 2);
+            }
+        }
+
+        // Data processing variables
+        let lastProcessedTimestamp = 0;
+        let totalProcessed = 0;
+        let totalSuccess = 0;
+        let confSum = 0;
+
+        function updateDashboard() {
+            fetch('/api/telemetry')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('connection-status').className = 'status-indicator online';
+                    document.getElementById('connection-status').innerText = 'LIVE';
+                    if (data.length === 0) return;
+
+                    totalProcessed = 0; totalSuccess = 0; confSum = 0;
+                    const confLabels = []; const confData = []; const jammerData = [];
+                    const chanSuccess = Array(51).fill(0); const chanFail = Array(51).fill(0);
+                    let latestPredictions = null; let latestConfidences = null;
+                    const logWindow = document.getElementById('event-log');
+                    let newLogsHtml = '';
+
+                    data.forEach(event => {
+                        if (event.event === "IQ_SNAPSHOT") { drawConstellation(event.data); return; }
+                        
+                        if (event.event === "DETECTION") {
+                            latestPredictions = event.predictions; latestConfidences = event.confidences;
+                            document.getElementById('top-prediction').innerText = latestPredictions[0];
+                            return;
+                        }
+
+                        if (event.source === 'red_team') {
+                            if (event.event === "TARGET_LOCK") {
+                                const timeStr = new Date(event.timestamp*1000).toLocaleTimeString();
+                                jammerData.push({x: timeStr, y: 50});
+                                document.querySelector('.header').style.animation = 'pulse-red 1s infinite';
+                                if (event.timestamp > lastProcessedTimestamp) {
+                                    newLogsHtml = `<div class="log-entry error">[${timeStr}] RED TEAM: Target Lock at ${(event.freq_hz/1000000).toFixed(3)} MHz</div>` + newLogsHtml;
+                                }
+                            }
+                            return;
+                        }
+
+                        if (event.event === "START") {
+                            document.querySelector('.header').style.animation = 'none';
+                            totalProcessed = 0; totalSuccess = 0; confSum = 0;
+                            chanSuccess.fill(0); chanFail.fill(0);
+                            document.getElementById('mission-id-header').innerText = `[ ${event.mission_id || 'UNKNOWN'} ]`;
+                            newLogsHtml += `<div class="log-entry info">[${new Date(event.timestamp*1000).toLocaleTimeString()}] MISSION START: ${event.mission_id || 'UNKNOWN'}</div>`;
+                            return;
+                        }
+
+                        if (event.event === "PACKET") {
+                            totalProcessed++; confSum += event.confidence || 0;
+                            const timeStr = new Date(event.timestamp*1000).toLocaleTimeString();
+                            confLabels.push(timeStr); confData.push(event.confidence || 0);
+                            
+                            if (event.rssi !== undefined) {
+                                document.getElementById('rssi-value').innerText = `${event.rssi.toFixed(1)} dBm`;
+                                document.getElementById('rssi-value').style.color = event.rssi > -60 ? '#00ffcc' : (event.rssi > -80 ? '#ffcc00' : '#ff3333');
+                            }
+
+                            if (event.channel !== undefined && event.channel >= 0 && event.channel < 51) {
+                                if (event.crc_ok) chanSuccess[event.channel]++; else chanFail[event.channel]++;
+                            }
+
+                            if (event.crc_ok) {
+                                totalSuccess++;
+                                if (event.timestamp > lastProcessedTimestamp) {
+                                    newLogsHtml = `<div class="log-entry success">[${timeStr}] RX OK | Seq: ${event.sequence} | Conf: ${event.confidence}%</div>` + newLogsHtml;
+                                }
+                            } else {
+                                if (event.timestamp > lastProcessedTimestamp) {
+                                    newLogsHtml = `<div class="log-entry warning">[${timeStr}] CRC FAIL | Seq: ${event.sequence} | Chan: ${event.channel}</div>` + newLogsHtml;
+                                }
+                            }
+                        }
+                    });
+
+                    if (totalProcessed > 0) {
+                        const sr = (totalSuccess / totalProcessed * 100).toFixed(1);
+                        document.getElementById('success-rate').innerText = `${sr}%`;
+                        document.getElementById('success-rate').style.color = sr > 80 ? '#00ffcc' : (sr > 50 ? '#ffcc00' : '#ff3333');
+                        document.getElementById('avg-confidence').innerText = `${(confSum / totalProcessed).toFixed(1)}%`;
+                    }
+
+                    confidenceChart.data.labels = confLabels.slice(-50);
+                    confidenceChart.data.datasets[0].data = confData.slice(-50);
+                    confidenceChart.data.datasets[1].data = jammerData.slice(-10);
+                    confidenceChart.update();
+
+                    channelChart.data.datasets[0].data = chanSuccess;
+                    channelChart.data.datasets[1].data = chanFail;
+                    channelChart.update();
+
+                    if (latestPredictions && latestConfidences) {
+                        predictionChart.data.labels = latestPredictions.slice(0, 5);
+                        predictionChart.data.datasets[0].data = latestConfidences.slice(0, 5).map(c => c * 100);
+                        predictionChart.update();
+                    }
+
+                    if (newLogsHtml) {
+                        logWindow.innerHTML = newLogsHtml + logWindow.innerHTML;
+                        const logs = logWindow.getElementsByClassName('log-entry');
+                        while (logs.length > 100) logWindow.removeChild(logs[logs.length - 1]);
+                    }
+                    if (data.length > 0) lastProcessedTimestamp = data[data.length - 1].timestamp;
+                })
+                .catch(err => {
+                    document.getElementById('connection-status').className = 'status-indicator offline';
+                    document.getElementById('connection-status').innerText = 'OFFLINE';
+                });
+        }
+
+        setInterval(updateDashboard, 1000);
+        updateDashboard();
+
+        document.getElementById('clear-btn').addEventListener('click', () => {
+            if (confirm("Wipe all telemetry data?")) {
+                fetch('/api/clear', { method: 'POST' }).then(() => {
+                    lastProcessedTimestamp = 0;
+                    confidenceChart.data.labels = []; confidenceChart.data.datasets[0].data = [];
+                    confidenceChart.data.datasets[1].data = []; confidenceChart.update();
+                    document.getElementById('event-log').innerHTML = ''; updateDashboard();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

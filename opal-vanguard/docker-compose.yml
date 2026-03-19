@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  transceiver:
+    build: .
+    container_name: opal-transceiver
+    privileged: true
+    network_mode: "host"
+    volumes:
+      - .:/opt/opal-vanguard
+      - /dev/bus/usb:/dev/bus/usb
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=/root/.Xauthority
+    tty: true
+    stdin_open: true
+    command: ["python3", "src/usrp_transceiver.py", "--role", "ALPHA", "--config", "mission_configs/level1_soft_link.yaml"]
+
+  dashboard:
+    build: .
+    container_name: opal-dashboard
+    network_mode: "host"
+    volumes:
+      - .:/opt/opal-vanguard
+    command: ["python3", "dashboard/app.py"]

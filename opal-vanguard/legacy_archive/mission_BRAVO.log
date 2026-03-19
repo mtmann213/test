@@ -1,0 +1,2797 @@
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 17:27:47 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:27:54 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 17:27:55 | Epoch: 1772926075 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:28:00 | Epoch: 1772926080 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.82
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Recovered: sid=2 type=5 seq=0 plen=3
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:28:05 | Epoch: 1772926085 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:28:10 | Epoch: 1772926090 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:28:15 | Epoch: 1772926095 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=2 seq=0 plen=3
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 0.93
+[SESSION] RX ACK | State: CONNECTING
+[96m[MAC] Handshake ACK Received. Session Connected.[0m
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:28:20 | Epoch: 1772926100 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=1 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=3 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=4 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=9 plen=36
+[91m[CRC FAIL][0m ID: 009 | LEN: 36 | CONF: 0.93
+[TOD Hop] 17:28:25 | Epoch: 1772926105 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=1 type=3 seq=5 plen=36
+[91m[CRC FAIL][0m ID: 005 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=0 seq=23 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=26 plen=36
+[91m[CRC FAIL][0m ID: 026 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=2 type=0 seq=27 plen=36
+[91m[CRC FAIL][0m ID: 027 | LEN: 36 | CONF: 0.88
+[TOD Hop] 17:28:30 | Epoch: 1772926110 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=28 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=29 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=31 plen=36
+[91m[CRC FAIL][0m ID: 031 | LEN: 36 | CONF: 0.87
+[TOD Hop] 17:28:35 | Epoch: 1772926115 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=32 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=33 plen=36
+[DEBUG] Recovered: sid=6 type=0 seq=34 plen=36
+[91m[CRC FAIL][0m ID: 034 | LEN: 36 | CONF: 0.79
+[DEBUG] Recovered: sid=1 type=0 seq=20 plen=36
+[91m[CRC FAIL][0m ID: 020 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=2 type=0 seq=35 plen=36
+[TOD Hop] 17:28:40 | Epoch: 1772926120 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=37 plen=36
+[91m[CRC FAIL][0m ID: 037 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=38 plen=36
+[91m[CRC FAIL][0m ID: 038 | LEN: 36 | CONF: 0.83
+[DEBUG] Recovered: sid=2 type=81 seq=36 plen=56
+[91m[CRC FAIL][0m ID: 036 | LEN: 56 | CONF: 0.84
+[TOD Hop] 17:28:45 | Epoch: 1772926125 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=40 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=41 plen=36
+[91m[CRC FAIL][0m ID: 041 | LEN: 36 | CONF: 0.77
+[DEBUG] Recovered: sid=1 type=0 seq=28 plen=36
+[91m[CRC FAIL][0m ID: 028 | LEN: 36 | CONF: 0.77
+[TOD Hop] 17:28:50 | Epoch: 1772926130 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=45 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=46 plen=36
+[91m[CRC FAIL][0m ID: 046 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=47 plen=36
+[91m[CRC FAIL][0m ID: 047 | LEN: 36 | CONF: 0.83
+[TOD Hop] 17:28:55 | Epoch: 1772926135 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=49 plen=36
+[91m[CRC FAIL][0m ID: 049 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=37 plen=36
+[91m[CRC FAIL][0m ID: 037 | LEN: 36 | CONF: 0.92
+[DEBUG] Recovered: sid=2 type=0 seq=49 plen=36
+[91m[CRC FAIL][0m ID: 049 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=52 plen=36
+[91m[CRC FAIL][0m ID: 052 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:29:00 | Epoch: 1772926140 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=53 plen=36
+[91m[CRC FAIL][0m ID: 053 | LEN: 36 | CONF: 0.82
+[DEBUG] Recovered: sid=12 type=0 seq=55 plen=36
+[91m[CRC FAIL][0m ID: 055 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=44 plen=36
+[91m[CRC FAIL][0m ID: 044 | LEN: 36 | CONF: 0.87
+[TOD Hop] 17:29:05 | Epoch: 1772926145 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=57 plen=36
+[91m[CRC FAIL][0m ID: 057 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=0 seq=59 plen=36
+[91m[CRC FAIL][0m ID: 059 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=0 seq=60 plen=36
+[TOD Hop] 17:29:10 | Epoch: 1772926150 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=61 plen=36
+[91m[CRC FAIL][0m ID: 061 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=63 plen=36
+[91m[CRC FAIL][0m ID: 063 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:29:15 | Epoch: 1772926155 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=65 plen=36
+[91m[CRC FAIL][0m ID: 065 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=67 plen=36
+[91m[CRC FAIL][0m ID: 067 | LEN: 36 | CONF: 0.85
+[TOD Hop] 17:29:20 | Epoch: 1772926160 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=69 plen=36
+[91m[CRC FAIL][0m ID: 069 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=71 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=73 plen=36
+[TOD Hop] 17:29:25 | Epoch: 1772926165 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=74 plen=36
+[91m[CRC FAIL][0m ID: 074 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=32 seq=75 plen=34
+[91m[CRC FAIL][0m ID: 075 | LEN: 34 | CONF: 0.90
+[DEBUG] Recovered: sid=2 type=0 seq=76 plen=36
+[TOD Hop] 17:29:30 | Epoch: 1772926170 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=77 plen=36
+[91m[CRC FAIL][0m ID: 077 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=2 type=0 seq=79 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=80 plen=36
+[91m[CRC FAIL][0m ID: 080 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=81 plen=36
+[91m[CRC FAIL][0m ID: 081 | LEN: 36 | CONF: 0.87
+[TOD Hop] 17:29:35 | Epoch: 1772926175 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=83 plen=36
+[91m[CRC FAIL][0m ID: 083 | LEN: 36 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=0 seq=89 plen=36
+[91m[CRC FAIL][0m ID: 089 | LEN: 36 | CONF: 0.94
+[TOD Hop] 17:29:40 | Epoch: 1772926180 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=87 plen=36
+[91m[CRC FAIL][0m ID: 087 | LEN: 36 | CONF: 0.84
+[DEBUG] Recovered: sid=2 type=0 seq=89 plen=36
+[91m[CRC FAIL][0m ID: 089 | LEN: 36 | CONF: 0.85
+[TOD Hop] 17:29:45 | Epoch: 1772926185 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=91 plen=36
+[91m[CRC FAIL][0m ID: 091 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=0 seq=93 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=94 plen=36
+[91m[CRC FAIL][0m ID: 094 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:29:50 | Epoch: 1772926190 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=95 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=97 plen=36
+[91m[CRC FAIL][0m ID: 097 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:29:55 | Epoch: 1772926195 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=99 plen=36
+[91m[CRC FAIL][0m ID: 099 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=100 plen=36
+[91m[CRC FAIL][0m ID: 100 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=99 plen=36
+[91m[CRC FAIL][0m ID: 099 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=101 plen=36
+[91m[CRC FAIL][0m ID: 101 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=102 plen=36
+[TOD Hop] 17:30:00 | Epoch: 1772926200 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=103 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=105 plen=36
+[91m[CRC FAIL][0m ID: 105 | LEN: 36 | CONF: 0.91
+[TOD Hop] 17:30:05 | Epoch: 1772926205 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=106 plen=36
+[91m[CRC FAIL][0m ID: 106 | LEN: 36 | CONF: 0.78
+[DEBUG] Recovered: sid=2 type=0 seq=108 plen=36
+[91m[CRC FAIL][0m ID: 108 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=2 type=0 seq=109 plen=36
+[91m[CRC FAIL][0m ID: 109 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=0 seq=110 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=111 plen=36
+[91m[CRC FAIL][0m ID: 111 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:30:10 | Epoch: 1772926210 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=112 plen=36
+[91m[CRC FAIL][0m ID: 112 | LEN: 36 | CONF: 0.83
+[DEBUG] Recovered: sid=2 type=0 seq=113 plen=36
+[91m[CRC FAIL][0m ID: 113 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=115 plen=36
+[91m[CRC FAIL][0m ID: 115 | LEN: 36 | CONF: 0.87
+[TOD Hop] 17:30:15 | Epoch: 1772926215 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=118 plen=36
+[TOD Hop] 17:30:20 | Epoch: 1772926220 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=119 plen=36
+[91m[CRC FAIL][0m ID: 119 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=0 seq=121 plen=36
+[91m[CRC FAIL][0m ID: 121 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=92 seq=123 plen=36
+[91m[CRC FAIL][0m ID: 123 | LEN: 36 | CONF: 0.85
+[TOD Hop] 17:30:25 | Epoch: 1772926225 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=124 plen=36
+[91m[CRC FAIL][0m ID: 124 | LEN: 36 | CONF: 0.96
+[DEBUG] Recovered: sid=2 type=0 seq=126 plen=36
+[91m[CRC FAIL][0m ID: 126 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=130 plen=36
+[92m[OK][0m ID: 130 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.89
+[SESSION] RX DATA | State: CONNECTED
+[DEBUG] Recovered: sid=2 type=0 seq=127 plen=36
+[91m[CRC FAIL][0m ID: 127 | LEN: 36 | CONF: 0.73
+[TOD Hop] 17:30:30 | Epoch: 1772926230 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=146 seq=0 plen=1
+[91m[CRC FAIL][0m ID: 000 | LEN: 1 | CONF: 0.79
+[DEBUG] Recovered: sid=2 type=0 seq=130 plen=36
+[91m[CRC FAIL][0m ID: 130 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=136 plen=36
+[92m[OK][0m ID: 136 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.92
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 17:30:35 | Epoch: 1772926235 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=137 plen=36
+[91m[CRC FAIL][0m ID: 137 | LEN: 36 | CONF: 0.70
+[DEBUG] Recovered: sid=2 type=0 seq=134 plen=36
+[91m[CRC FAIL][0m ID: 134 | LEN: 36 | CONF: 0.84
+[DEBUG] Recovered: sid=2 type=0 seq=135 plen=36
+[DEBUG] Recovered: sid=2 type=0 seq=136 plen=36
+[91m[CRC FAIL][0m ID: 136 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:30:40 | Epoch: 1772926240 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=0 seq=137 plen=36
+[91m[CRC FAIL][0m ID: 137 | LEN: 36 | CONF: 0.79
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 17:32:30 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:32:32 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[TOD Hop] 17:32:35 | Epoch: 1772926355 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[TOD Hop] 17:32:40 | Epoch: 1772926360 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.70
+[TOD Hop] 17:32:45 | Epoch: 1772926365 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=14 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[TOD Hop] 17:32:50 | Epoch: 1772926370 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.72
+[TOD Hop] 17:32:55 | Epoch: 1772926375 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=4 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.77
+[TOD Hop] 17:33:00 | Epoch: 1772926380 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.90
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=127 seq=120 plen=1
+[91m[CRC FAIL][0m ID: 120 | LEN: 1 | CONF: 0.61
+[TOD Hop] 17:33:05 | Epoch: 1772926385 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.67
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.82
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.65
+[TOD Hop] 17:33:10 | Epoch: 1772926390 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=68
+[91m[CRC FAIL][0m ID: 000 | LEN: 68 | CONF: 0.66
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.66
+[TOD Hop] 17:33:15 | Epoch: 1772926395 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.71
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.82
+[TOD Hop] 17:33:20 | Epoch: 1772926400 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=176 plen=16
+[91m[CRC FAIL][0m ID: 176 | LEN: 16 | CONF: 0.82
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[TOD Hop] 17:33:25 | Epoch: 1772926405 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=66 type=6 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=129 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.69
+[TOD Hop] 17:33:30 | Epoch: 1772926410 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.80
+[TOD Hop] 17:33:35 | Epoch: 1772926415 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.81
+[TOD Hop] 17:33:40 | Epoch: 1772926420 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.87
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.69
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 17:35:37 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:35:39 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 17:35:40 | Epoch: 1772926540 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:35:45 | Epoch: 1772926545 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:35:50 | Epoch: 1772926550 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 17:35:55 | Epoch: 1772926555 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:36:00 | Epoch: 1772926560 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:36:05 | Epoch: 1772926565 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 17:36:10 | Epoch: 1772926570 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:36:15 | Epoch: 1772926575 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:36:20 | Epoch: 1772926580 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:36:25 | Epoch: 1772926585 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:36:30 | Epoch: 1772926590 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:36:35 | Epoch: 1772926595 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:36:40 | Epoch: 1772926600 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:36:45 | Epoch: 1772926605 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 17:36:50 | Epoch: 1772926610 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:36:55 | Epoch: 1772926615 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:37:00 | Epoch: 1772926620 | Chan: 3 | Freq: 915.000 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 17:57:11 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:57:13 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 17:57:15 | Epoch: 1772927835 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:57:20 | Epoch: 1772927840 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 17:57:25 | Epoch: 1772927845 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 17:57:30 | Epoch: 1772927850 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 17:57:35 | Epoch: 1772927855 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:57:40 | Epoch: 1772927860 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 17:57:45 | Epoch: 1772927865 | Chan: 0 | Freq: 914.550 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 17:59:13 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:59:15 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 17:59:20 | Epoch: 1772927960 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 17:59:25 | Epoch: 1772927965 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 17:59:30 | Epoch: 1772927970 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 17:59:35 | Epoch: 1772927975 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:59:40 | Epoch: 1772927980 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:59:45 | Epoch: 1772927985 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:59:50 | Epoch: 1772927990 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:59:55 | Epoch: 1772927995 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 18:00:00 | Epoch: 1772928000 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 18:00:05 | Epoch: 1772928005 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 18:00:10 | Epoch: 1772928010 | Chan: 1 | Freq: 914.700 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:03:49 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:03:51 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+[TOD Hop] 18:03:55 | Epoch: 1772928235 | Chan: 5 | Freq: 915.300 MHz
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+[TOD Hop] 18:04:00 | Epoch: 1772928240 | Chan: 5 | Freq: 915.300 MHz
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+Decode Error: cannot reshape array of size 120 into shape (8,16)
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:06:10 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:06:12 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[TOD Hop] 18:06:15 | Epoch: 1772928375 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 18 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.88
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[TOD Hop] 18:06:20 | Epoch: 1772928380 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.82
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.87
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.94
+[TOD Hop] 18:06:25 | Epoch: 1772928385 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 006 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 175 | LEN: 19 | CONF: 0.64
+[91m[CRC FAIL][0m ID: 002 | LEN: 16 | CONF: 0.86
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 1.00
+[TOD Hop] 18:06:30 | Epoch: 1772928390 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.97
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[TOD Hop] 18:06:35 | Epoch: 1772928395 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.72
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[91m[CRC FAIL][0m ID: 038 | LEN: 21 | CONF: 0.74
+[TOD Hop] 18:06:40 | Epoch: 1772928400 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.75
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.94
+[91m[CRC FAIL][0m ID: 113 | LEN: 96 | CONF: 0.78
+[91m[CRC FAIL][0m ID: 144 | LEN: 17 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.87
+[TOD Hop] 18:06:45 | Epoch: 1772928405 | Chan: 1 | Freq: 914.700 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:09:14 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:09:16 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.93
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[TOD Hop] 18:09:20 | Epoch: 1772928560 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Guard Discard: CONF=0.45
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.89
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[TOD Hop] 18:09:25 | Epoch: 1772928565 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.98
+[DEBUG] Guard Discard: CONF=0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 87 | CONF: 0.61
+[DEBUG] Guard Discard: CONF=0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.94
+[TOD Hop] 18:09:30 | Epoch: 1772928570 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.92
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.75
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[TOD Hop] 18:09:35 | Epoch: 1772928575 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.89
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.66
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.95
+[91m[CRC FAIL][0m ID: 102 | LEN: 41 | CONF: 0.72
+[DEBUG] Guard Discard: CONF=0.54
+[DEBUG] Guard Discard: CONF=0.50
+[TOD Hop] 18:09:40 | Epoch: 1772928580 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.99
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.92
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.92
+[TOD Hop] 18:09:45 | Epoch: 1772928585 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 010 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.99
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.90
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.72
+[TOD Hop] 18:09:50 | Epoch: 1772928590 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.89
+[DEBUG] Guard Discard: CONF=0.47
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.92
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.92
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.90
+[TOD Hop] 18:09:55 | Epoch: 1772928595 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.84
+[DEBUG] Guard Discard: CONF=0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 8 | CONF: 0.84
+[DEBUG] Guard Discard: CONF=0.56
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.84
+[TOD Hop] 18:10:00 | Epoch: 1772928600 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.68
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.77
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[DEBUG] Guard Discard: CONF=0.52
+[TOD Hop] 18:10:05 | Epoch: 1772928605 | Chan: 1 | Freq: 914.700 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:12:12 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:12:14 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 18:12:15 | Epoch: 1772928735 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.89
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.90
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.93
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[TOD Hop] 18:12:20 | Epoch: 1772928740 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.93
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.99
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.93
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.98
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.93
+[DEBUG] Guard Discard: CONF=0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[TOD Hop] 18:12:25 | Epoch: 1772928745 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Guard Discard: CONF=0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.90
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.94
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.95
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.78
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[DEBUG] Guard Discard: CONF=0.59
+[TOD Hop] 18:12:30 | Epoch: 1772928750 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.91
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.76
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.97
+[TOD Hop] 18:12:35 | Epoch: 1772928755 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.97
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.97
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.89
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 1.00
+[TOD Hop] 18:12:40 | Epoch: 1772928760 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[DEBUG] Guard Discard: CONF=0.43
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[TOD Hop] 18:12:45 | Epoch: 1772928765 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.95
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.93
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.84
+[DEBUG] Guard Discard: CONF=0.49
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[TOD Hop] 18:12:50 | Epoch: 1772928770 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.96
+[DEBUG] Guard Discard: CONF=0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.99
+[91m[CRC FAIL][0m ID: 249 | LEN: 52 | CONF: 0.77
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:14:36 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:14:38 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 18:14:40 | Epoch: 1772928880 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Guard Discard: CONF=0.43
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[TOD Hop] 18:14:45 | Epoch: 1772928885 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.91
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.92
+[SESSION] RX DATA | State: CONNECTING
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.94
+[SESSION] RX DATA | State: CONNECTING
+[TOD Hop] 18:14:50 | Epoch: 1772928890 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Guard Discard: CONF=0.44
+[TOD Hop] 18:14:55 | Epoch: 1772928895 | Chan: 2 | Freq: 914.850 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 0.90
+[SESSION] RX ACK | State: CONNECTING
+[96m[MAC] Handshake ACK Received. Session Connected.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.78
+[91m[CRC FAIL][0m ID: 000 | LEN: 36 | CONF: 0.81
+[TOD Hop] 18:15:00 | Epoch: 1772928900 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 004 | LEN: 36 | CONF: 0.92
+[TOD Hop] 18:15:05 | Epoch: 1772928905 | Chan: 1 | Freq: 914.700 MHz
+[92m[OK][0m ID: 022 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.93
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 0.92
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 021 | LEN: 36 | CONF: 0.80
+[DEBUG] Guard Discard: CONF=0.58
+[TOD Hop] 18:15:10 | Epoch: 1772928910 | Chan: 5 | Freq: 915.300 MHz
+[92m[OK][0m ID: 028 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.95
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 0.89
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 216 | LEN: 42 | CONF: 0.79
+[TOD Hop] 18:15:15 | Epoch: 1772928915 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 036 | LEN: 36 | CONF: 0.83
+[TOD Hop] 18:15:20 | Epoch: 1772928920 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 040 | LEN: 36 | CONF: 0.79
+[91m[CRC FAIL][0m ID: 041 | LEN: 36 | CONF: 0.75
+[TOD Hop] 18:15:25 | Epoch: 1772928925 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Guard Discard: CONF=0.55
+[TOD Hop] 18:15:30 | Epoch: 1772928930 | Chan: 1 | Freq: 914.700 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:17:47 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:17:49 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 18:17:50 | Epoch: 1772929070 | Chan: 3 | Freq: 915.000 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.91
+[SESSION] RX SYN | State: CONNECTING
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.78
+[TOD Hop] 18:17:55 | Epoch: 1772929075 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 133 | LEN: 87 | CONF: 0.69
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Guard Discard: CONF=0.49
+[TOD Hop] 18:18:00 | Epoch: 1772929080 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.65
+[TOD Hop] 18:18:05 | Epoch: 1772929085 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.84
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.90
+[SESSION] RX SYN | State: CONNECTED
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[TOD Hop] 18:18:10 | Epoch: 1772929090 | Chan: 0 | Freq: 914.550 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.90
+[SESSION] RX SYN | State: CONNECTED
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 128 | LEN: 49 | CONF: 0.84
+[91m[CRC FAIL][0m ID: 016 | LEN: 33 | CONF: 0.71
+[DEBUG] Guard Discard: CONF=0.59
+[TOD Hop] 18:18:15 | Epoch: 1772929095 | Chan: 1 | Freq: 914.700 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.90
+[SESSION] RX SYN | State: CONNECTED
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[TOD Hop] 18:18:20 | Epoch: 1772929100 | Chan: 1 | Freq: 914.700 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.91
+[SESSION] RX SYN | State: CONNECTED
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 010 | LEN: 16 | CONF: 0.91
+[TOD Hop] 18:18:25 | Epoch: 1772929105 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 18:18:30 | Epoch: 1772929110 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.73
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 18:38:41 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 18:38:43 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.96
+[SESSION] RX SYN | State: CONNECTING
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[TOD Hop] 18:38:45 | Epoch: 1772930325 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.80
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.72
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.97
+[SESSION] RX SYN | State: CONNECTED
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 001 | LEN: 36 | CONF: 0.79
+[TOD Hop] 18:38:50 | Epoch: 1772930330 | Chan: 2 | Freq: 914.850 MHz
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[TOD Hop] 18:38:55 | Epoch: 1772930335 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 016 | LEN: 36 | CONF: 0.78
+[91m[CRC FAIL][0m ID: 050 | LEN: 43 | CONF: 0.85
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 0.93
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 18:39:00 | Epoch: 1772930340 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Guard Discard: CONF=0.47
+[DEBUG] Guard Discard: CONF=0.54
+[92m[OK][0m ID: 023 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.97
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 024 | LEN: 20 | CONF: 0.81
+[TOD Hop] 18:39:05 | Epoch: 1772930345 | Chan: 1 | Freq: 914.700 MHz
+[92m[OK][0m ID: 028 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.97
+[SESSION] RX DATA | State: CONNECTED
+[DEBUG] Guard Discard: CONF=0.58
+[92m[OK][0m ID: 030 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.91
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 18:39:10 | Epoch: 1772930350 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 67 | CONF: 0.82
+[91m[CRC FAIL][0m ID: 020 | LEN: 36 | CONF: 0.88
+[92m[OK][0m ID: 034 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.96
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 111 | LEN: 58 | CONF: 0.71
+[TOD Hop] 18:39:15 | Epoch: 1772930355 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 024 | LEN: 36 | CONF: 0.74
+[92m[OK][0m ID: 039 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.96
+[SESSION] RX DATA | State: CONNECTED
+[DEBUG] Guard Discard: CONF=0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 70 | CONF: 0.60
+[92m[OK][0m ID: 042 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.97
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 18:39:20 | Epoch: 1772930360 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 029 | LEN: 36 | CONF: 0.84
+[DEBUG] Guard Discard: CONF=0.42
+[91m[CRC FAIL][0m ID: 036 | LEN: 7 | CONF: 0.63
+[TOD Hop] 18:39:25 | Epoch: 1772930365 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 045 | LEN: 51 | CONF: 0.62
+[92m[OK][0m ID: 047 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.96
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 049 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 051 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.96
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 18:39:30 | Epoch: 1772930370 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 052 | LEN: 36 | CONF: 0.82
+[DEBUG] Guard Discard: CONF=0.60
+[TOD Hop] 18:39:35 | Epoch: 1772930375 | Chan: 3 | Freq: 915.000 MHz
+[92m[OK][0m ID: 057 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.91
+[SESSION] RX DATA | State: CONNECTED
+[DEBUG] Guard Discard: CONF=0.59
+[92m[OK][0m ID: 059 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.98
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 18:39:40 | Epoch: 1772930380 | Chan: 5 | Freq: 915.300 MHz
+[92m[OK][0m ID: 064 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.96
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 065 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.97
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 066 | LEN: 36 | CONF: 0.68
+[DEBUG] Guard Discard: CONF=0.48
+[TOD Hop] 18:39:45 | Epoch: 1772930385 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 18:39:50 | Epoch: 1772930390 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 030 | LEN: 59 | CONF: 0.80
+[DEBUG] Guard Discard: CONF=0.55
+[TOD Hop] 18:39:55 | Epoch: 1772930395 | Chan: 0 | Freq: 914.550 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 19:42:54 2026] ---
+--- [OPAL VANGUARD] LEVEL_1_SOFT_LINK ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 19:42:56 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 012 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 014 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 015 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 016 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 017 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 018 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 019 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 020 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 021 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 022 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 023 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 024 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 025 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 026 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 027 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 028 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 029 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 030 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 031 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 032 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 033 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 034 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 035 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 036 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 037 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 038 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 039 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 040 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 041 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 042 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 011 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 002 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 044 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 003 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 045 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 046 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 004 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 047 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 048 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 049 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 050 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 052 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 009 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 053 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 010 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 054 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 011 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 012 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 056 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 013 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 057 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 058 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 059 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 117 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 060 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 061 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 062 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 063 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 064 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 065 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 067 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 014 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 068 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 070 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 024 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 071 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 025 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 072 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 026 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 073 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 027 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 074 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 075 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 076 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 077 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 030 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 078 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 031 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 079 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 032 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 080 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 033 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 081 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 082 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 034 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 084 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 036 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 085 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 037 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 086 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 038 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 087 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 088 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 039 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 089 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 090 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 047 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 043 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 093 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 094 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 044 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 095 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 096 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 046 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 097 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 098 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 048 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 099 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 100 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 049 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 101 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 102 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 103 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 104 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 053 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 105 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 106 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 054 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 107 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 055 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 108 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 057 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 058 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 111 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 112 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 113 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 060 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 114 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 061 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 115 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 062 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 116 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 117 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 118 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 064 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 119 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 120 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 121 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 122 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 068 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 124 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 125 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 070 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 126 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 071 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 127 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 128 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 073 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 129 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 130 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 131 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 075 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 132 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 133 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 134 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 078 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 135 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 136 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 079 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 137 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 080 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 138 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 139 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 140 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 083 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 141 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 142 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 143 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 144 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 145 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 146 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 147 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 148 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 089 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 149 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 090 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 150 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 091 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 151 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 092 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 152 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 093 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 153 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 154 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 155 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 095 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 156 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 157 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 107 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 158 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 110 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 159 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 160 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 161 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 100 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 162 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 102 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 163 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 164 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 165 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 166 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 167 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 168 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 169 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 107 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 171 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 172 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 109 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 174 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 111 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 175 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 112 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 176 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 113 | LEN: 12 | CONF: 1.00
+[92m[OK][0m ID: 177 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 178 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 114 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 179 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 107 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 180 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 108 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 181 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 117 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 182 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 110 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 183 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 119 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 185 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 186 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 187 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 188 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 189 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 190 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 124 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 191 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 125 | LEN: 61 | CONF: 1.00
+[92m[OK][0m ID: 192 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 126 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 193 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 194 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 128 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 195 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 129 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 197 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 198 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 131 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 199 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 132 | LEN: 60 | CONF: 1.00
+[92m[OK][0m ID: 200 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 201 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 202 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 203 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 135 | LEN: 60 | CONF: 1.00
+[92m[OK][0m ID: 204 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 142 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 205 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 143 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 206 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 207 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 208 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 139 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 209 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 210 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 211 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 142 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 212 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 143 | LEN: 18 | CONF: 1.00
+[92m[OK][0m ID: 213 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 214 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 215 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 216 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 217 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 147 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 148 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 219 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 220 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 149 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 221 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 150 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 223 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 224 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 225 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 226 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 154 | LEN: 20 | CONF: 1.00
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 19:49:09 2026] ---
+--- [OPAL VANGUARD] LEVEL_2_REPAIRABLE ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 19:49:11 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: CONNECTING
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 204 | LEN: 32 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: CONNECTED
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 010 | LEN: 3 | CONF: 1.00
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 006 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 008 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 132 | LEN: 13 | CONF: 1.00
+[92m[OK][0m ID: 019 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 020 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 021 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 022 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 008 | LEN: 39 | CONF: 1.00
+[92m[OK][0m ID: 023 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 009 | LEN: 18 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 010 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 026 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 027 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 028 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 029 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 014 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 015 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 031 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 033 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 017 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 018 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 036 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 140 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 037 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 038 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 230 | LEN: 39 | CONF: 1.00
+[92m[OK][0m ID: 040 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 041 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 024 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 043 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 173 | LEN: 65 | CONF: 1.00
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 19:52:55 2026] ---
+--- [OPAL VANGUARD] LEVEL_3_RESILIENT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 19:52:58 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+
+[SESSION] RX DATA | State: CONNECTED[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 014 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 015 | LEN: 20 | CONF: 1.00
+[92m[OK][0m ID: 017 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 018 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 019 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 020 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 021 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 022 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 023 | LEN: 20 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 024 | LEN: 20 | CONF: 1.00
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 19:53:26 2026] ---
+--- [OPAL VANGUARD] LEVEL_4_STEALTH ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 19:53:28 2026
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTING
+[96m[MAC] Handshake ACK Received. Session Connected.[0m
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 012 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 014 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 015 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 016 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 017 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 019 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 020 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 021 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 022 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 023 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 19:54:18 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 19:54:20 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[91m[CRC FAIL][0m ID: 019 | LEN: 93 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTING
+[96m[MAC] Handshake ACK Received. Session Connected.[0m
+[SESSION] RX ACK | State: CONNECTED[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 000 | LEN: 1 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:54:25 | Epoch: 1772934865 | Chan: 6 | Freq: 914.840 MHz
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:54:30 | Epoch: 1772934870 | Chan: 18 | Freq: 915.320 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 012 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:54:35 | Epoch: 1772934875 | Chan: 2 | Freq: 914.680 MHz
+[91m[CRC FAIL][0m ID: 013 | LEN: 36 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 000 | LEN: 1 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[92m[OK][0m ID: 014 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 016 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 017 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 018 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:54:40 | Epoch: 1772934880 | Chan: 6 | Freq: 914.840 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 019 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 020 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 021 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:54:45 | Epoch: 1772934885 | Chan: 10 | Freq: 915.000 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 024 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 025 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 026 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 027 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 028 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:54:50 | Epoch: 1772934890 | Chan: 10 | Freq: 915.000 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 030 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 031 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 032 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 033 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:54:55 | Epoch: 1772934895 | Chan: 0 | Freq: 914.600 MHz
+[92m[OK][0m ID: 034 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 035 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 036 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:00 | Epoch: 1772934900 | Chan: 0 | Freq: 914.600 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 1 | CONF: 1.00
+[92m[OK][0m ID: 037 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 040 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[92m[OK][0m ID: 042 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 043 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:05 | Epoch: 1772934905 | Chan: 5 | Freq: 914.800 MHz
+[91m[CRC FAIL][0m ID: 037 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 044 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 045 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 046 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 047 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 048 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:10 | Epoch: 1772934910 | Chan: 0 | Freq: 914.600 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 049 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 050 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 051 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 052 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 053 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:15 | Epoch: 1772934915 | Chan: 9 | Freq: 914.960 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 054 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 056 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 057 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 058 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:20 | Epoch: 1772934920 | Chan: 9 | Freq: 914.960 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 059 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 060 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 061 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 062 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 063 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:55:25 | Epoch: 1772934925 | Chan: 13 | Freq: 915.120 MHz
+[92m[OK][0m ID: 064 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 065 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 066 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 067 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:30 | Epoch: 1772934930 | Chan: 8 | Freq: 914.920 MHz
+[91m[CRC FAIL][0m ID: 097 | LEN: 53 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[92m[OK][0m ID: 068 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 058 | LEN: 36 | CONF: 1.00
+[TOD Hop] 19:55:35 | Epoch: 1772934935 | Chan: 2 | Freq: 914.680 MHz
+[92m[OK][0m ID: 072 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 074 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 075 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 076 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 077 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 078 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:40 | Epoch: 1772934940 | Chan: 1 | Freq: 914.640 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 079 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 080 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 081 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 083 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:45 | Epoch: 1772934945 | Chan: 12 | Freq: 915.080 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 084 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 085 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 086 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 087 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 088 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:55:50 | Epoch: 1772934950 | Chan: 5 | Freq: 914.800 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 089 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 092 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 093 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:55:55 | Epoch: 1772934955 | Chan: 11 | Freq: 915.040 MHz
+[92m[OK][0m ID: 094 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 095 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 096 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 097 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 098 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:00 | Epoch: 1772934960 | Chan: 3 | Freq: 914.720 MHz
+[92m[OK][0m ID: 099 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 101 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 102 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 103 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:05 | Epoch: 1772934965 | Chan: 14 | Freq: 915.160 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 106 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 107 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 108 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:10 | Epoch: 1772934970 | Chan: 11 | Freq: 915.040 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 109 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 110 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 112 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 113 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:15 | Epoch: 1772934975 | Chan: 7 | Freq: 914.880 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 114 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 115 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 116 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 117 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:20 | Epoch: 1772934980 | Chan: 10 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 118 | LEN: 36 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 000 | LEN: 1 | CONF: 1.00
+[92m[OK][0m ID: 119 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 122 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 123 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:56:25 | Epoch: 1772934985 | Chan: 0 | Freq: 914.600 MHz
+[92m[OK][0m ID: 124 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 125 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 105 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 126 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:30 | Epoch: 1772934990 | Chan: 2 | Freq: 914.680 MHz
+[91m[CRC FAIL][0m ID: 127 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 107 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 130 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 132 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:35 | Epoch: 1772934995 | Chan: 0 | Freq: 914.600 MHz
+[91m[CRC FAIL][0m ID: 133 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 135 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 136 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 137 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 138 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:40 | Epoch: 1772935000 | Chan: 10 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 250 | LEN: 53 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 140 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 141 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 142 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 143 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:45 | Epoch: 1772935005 | Chan: 13 | Freq: 915.120 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 144 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 145 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:56:50 | Epoch: 1772935010 | Chan: 19 | Freq: 915.360 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 149 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 150 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 151 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 152 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 153 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:56:55 | Epoch: 1772935015 | Chan: 5 | Freq: 914.800 MHz
+[92m[OK][0m ID: 154 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 155 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 156 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 157 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 158 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:00 | Epoch: 1772935020 | Chan: 4 | Freq: 914.760 MHz
+[92m[OK][0m ID: 159 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 160 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 161 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 162 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 163 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:05 | Epoch: 1772935025 | Chan: 19 | Freq: 915.360 MHz
+[92m[OK][0m ID: 164 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 165 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 138 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 166 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[92m[OK][0m ID: 168 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[TOD Hop] 19:57:10 | Epoch: 1772935030 | Chan: 14 | Freq: 915.160 MHz
+[SESSION] RX ACK | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 169 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 170 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 171 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 172 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 173 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:15 | Epoch: 1772935035 | Chan: 2 | Freq: 914.680 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 174 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 175 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 176 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:20 | Epoch: 1772935040 | Chan: 1 | Freq: 914.640 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 178 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 149 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 180 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 181 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 182 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 183 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 19:57:25 | Epoch: 1772935045 | Chan: 18 | Freq: 915.320 MHz
+[92m[OK][0m ID: 184 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 185 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 186 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 187 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 188 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:30 | Epoch: 1772935050 | Chan: 6 | Freq: 914.840 MHz
+[92m[OK][0m ID: 189 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 190 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 192 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:35 | Epoch: 1772935055 | Chan: 16 | Freq: 915.240 MHz
+[92m[OK][0m ID: 195 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 196 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 197 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 198 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:40 | Epoch: 1772935060 | Chan: 15 | Freq: 915.200 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 199 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 200 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 201 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 202 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:45 | Epoch: 1772935065 | Chan: 6 | Freq: 914.840 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 204 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[91m[CRC FAIL][0m ID: 205 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 206 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:57:50 | Epoch: 1772935070 | Chan: 9 | Freq: 914.960 MHz
+[91m[CRC FAIL][0m ID: 207 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 208 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 210 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 211 | LEN: 36 | CONF: 1.00
+[TOD Hop] 19:57:55 | Epoch: 1772935075 | Chan: 11 | Freq: 915.040 MHz
+[92m[OK][0m ID: 214 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 215 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 217 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:58:00 | Epoch: 1772935080 | Chan: 10 | Freq: 915.000 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 219 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 220 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 221 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 222 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 223 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 19:58:05 | Epoch: 1772935085 | Chan: 5 | Freq: 914.800 MHz
+[TOD Hop] 19:58:10 | Epoch: 1772935090 | Chan: 11 | Freq: 915.040 MHz
+[TOD Hop] 19:58:15 | Epoch: 1772935095 | Chan: 12 | Freq: 915.080 MHz
+[TOD Hop] 19:58:20 | Epoch: 1772935100 | Chan: 10 | Freq: 915.000 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:04:12 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:04:13 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+Traceback (most recent call last):
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 332, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 330, in main
+    args = parser.parse_args(); qapp = Qt.QApplication(sys.argv); tb = OpalVanguardUSRP(args.role, args.serial, args.config); tb.start(); tb.show(); qapp.exec_()
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 235, in __init__
+    self.msg_connect((self.depkt_b, "diagnostics"), (self.diag_h, "msg"))
+                                                     ^^^^^^^^^^^
+AttributeError: 'OpalVanguardUSRP' object has no attribute 'diag_h'
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:05:35 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:05:36 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+Traceback (most recent call last):
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 329, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 327, in main
+    args = parser.parse_args(); qapp = Qt.QApplication(sys.argv); tb = OpalVanguardUSRP(args.role, args.serial, args.config); tb.start(); tb.show(); qapp.exec_()
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 235, in __init__
+    self.msg_connect((self.session, "pkt_out"), (self.pkt_a, "in"))
+  File "/usr/lib/python3/dist-packages/gnuradio/gr/hier_block2.py", line 53, in wrapped
+    func(self, src.to_basic_block(), srcport, dst.to_basic_block(), dstport)
+  File "/usr/lib/python3/dist-packages/gnuradio/gr/hier_block2.py", line 147, in msg_connect
+    self.primitive_msg_connect(*args)
+RuntimeError: connect called on already connected edge!
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:06:29 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:06:30 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTING
+[96m[MAC] Handshake ACK Received. Session Connected.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:06:35 | Epoch: 1772935595 | Chan: 12 | Freq: 915.080 MHz
+[91m[CRC FAIL][0m ID: 160 | LEN: 88 | CONF: 1.00
+[91m[CRC FAIL][0m ID: 166 | LEN: 1 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:06:40 | Epoch: 1772935600 | Chan: 5 | Freq: 914.800 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:13:20 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:13:21 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+Traceback (most recent call last):
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 337, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 335, in main
+    args = parser.parse_args(); qapp = Qt.QApplication(sys.argv); tb = OpalVanguardUSRP(args.role, args.serial, args.config); tb.start(); tb.show(); qapp.exec_()
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 297, in __init__
+    self.viz_panel.addWidget(sip.wrapinstance(self.snk_freq.qwidget(), Qt.QWidget))
+                                              ^^^^^^^^^^^^^
+AttributeError: 'OpalVanguardUSRP' object has no attribute 'snk_freq'
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:14:22 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:14:24 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 20:14:25 | Epoch: 1772936065 | Chan: 18 | Freq: 915.320 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:14:30 | Epoch: 1772936070 | Chan: 7 | Freq: 914.880 MHz
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:14:35 | Epoch: 1772936075 | Chan: 1 | Freq: 914.640 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[91m[CRC FAIL][0m ID: 009 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:24:23 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:24:24 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'ACK' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTING
+[96m[MAC] Handshake ACK Received. Session Connected.[0m
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:24:29 | Epoch: 1772936670 | Chan: 7 | Freq: 914.880 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:24:34 | Epoch: 1772936675 | Chan: 14 | Freq: 915.160 MHz
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:24:39 | Epoch: 1772936680 | Chan: 17 | Freq: 915.280 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:24:44 | Epoch: 1772936685 | Chan: 7 | Freq: 914.880 MHz
+[91m[CRC FAIL][0m ID: 018 | LEN: 36 | CONF: 1.00
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:24:49 | Epoch: 1772936690 | Chan: 1 | Freq: 914.640 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:24:54 | Epoch: 1772936695 | Chan: 4 | Freq: 914.760 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:25:16 2026] ---
+--- [OPAL VANGUARD] LEVEL_7_OFDM_MASTER ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:25:18 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 20:25:18 | Epoch: 88646835930 | Chan: 28 | Freq: 910.600 MHz
+[TOD Hop] 20:25:18 | Epoch: 88646835935 | Chan: 57 | Freq: 916.400 MHz
+[TOD Hop] 20:25:18 | Epoch: 88646835940 | Chan: 27 | Freq: 910.400 MHz
+[TOD Hop] 20:25:18 | Epoch: 88646835945 | Chan: 51 | Freq: 915.200 MHz
+[TOD Hop] 20:25:18 | Epoch: 88646835950 | Chan: 78 | Freq: 920.600 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835955 | Chan: 95 | Freq: 924.000 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835960 | Chan: 2 | Freq: 905.400 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835965 | Chan: 26 | Freq: 910.200 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835970 | Chan: 23 | Freq: 909.600 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835975 | Chan: 0 | Freq: 905.000 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835980 | Chan: 4 | Freq: 905.800 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835985 | Chan: 69 | Freq: 918.800 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835990 | Chan: 79 | Freq: 920.800 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646835995 | Chan: 37 | Freq: 912.400 MHz
+[TOD Hop] 20:25:19 | Epoch: 88646836000 | Chan: 92 | Freq: 923.400 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836005 | Chan: 6 | Freq: 906.200 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836010 | Chan: 75 | Freq: 920.000 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836015 | Chan: 9 | Freq: 906.800 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836020 | Chan: 11 | Freq: 907.200 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836025 | Chan: 75 | Freq: 920.000 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836030 | Chan: 74 | Freq: 919.800 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836035 | Chan: 78 | Freq: 920.600 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836040 | Chan: 1 | Freq: 905.200 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836045 | Chan: 30 | Freq: 911.000 MHz
+[TOD Hop] 20:25:20 | Epoch: 88646836050 | Chan: 13 | Freq: 907.600 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836055 | Chan: 21 | Freq: 909.200 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836060 | Chan: 27 | Freq: 910.400 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836065 | Chan: 3 | Freq: 905.600 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836070 | Chan: 44 | Freq: 913.800 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836075 | Chan: 56 | Freq: 916.200 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836080 | Chan: 18 | Freq: 908.600 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836085 | Chan: 79 | Freq: 920.800 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836090 | Chan: 16 | Freq: 908.200 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836095 | Chan: 87 | Freq: 922.400 MHz
+[TOD Hop] 20:25:21 | Epoch: 88646836100 | Chan: 32 | Freq: 911.400 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836105 | Chan: 61 | Freq: 917.200 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836110 | Chan: 0 | Freq: 905.000 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836115 | Chan: 94 | Freq: 923.800 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836120 | Chan: 71 | Freq: 919.200 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836125 | Chan: 45 | Freq: 914.000 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836130 | Chan: 63 | Freq: 917.600 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836135 | Chan: 60 | Freq: 917.000 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836140 | Chan: 82 | Freq: 921.400 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836145 | Chan: 16 | Freq: 908.200 MHz
+[TOD Hop] 20:25:22 | Epoch: 88646836150 | Chan: 30 | Freq: 911.000 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836155 | Chan: 9 | Freq: 906.800 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836160 | Chan: 57 | Freq: 916.400 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836165 | Chan: 26 | Freq: 910.200 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836170 | Chan: 62 | Freq: 917.400 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836175 | Chan: 8 | Freq: 906.600 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836180 | Chan: 64 | Freq: 917.800 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836185 | Chan: 13 | Freq: 907.600 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836190 | Chan: 5 | Freq: 906.000 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836195 | Chan: 13 | Freq: 907.600 MHz
+[TOD Hop] 20:25:23 | Epoch: 88646836200 | Chan: 81 | Freq: 921.200 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836205 | Chan: 39 | Freq: 912.800 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836210 | Chan: 52 | Freq: 915.400 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836215 | Chan: 69 | Freq: 918.800 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836220 | Chan: 69 | Freq: 918.800 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836225 | Chan: 48 | Freq: 914.600 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836230 | Chan: 28 | Freq: 910.600 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836235 | Chan: 25 | Freq: 910.000 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836240 | Chan: 75 | Freq: 920.000 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836245 | Chan: 62 | Freq: 917.400 MHz
+[TOD Hop] 20:25:24 | Epoch: 88646836250 | Chan: 86 | Freq: 922.200 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836255 | Chan: 22 | Freq: 909.400 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836260 | Chan: 46 | Freq: 914.200 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836265 | Chan: 44 | Freq: 913.800 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836270 | Chan: 42 | Freq: 913.400 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836275 | Chan: 61 | Freq: 917.200 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836280 | Chan: 87 | Freq: 922.400 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836285 | Chan: 65 | Freq: 918.000 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836290 | Chan: 33 | Freq: 911.600 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836295 | Chan: 9 | Freq: 906.800 MHz
+[TOD Hop] 20:25:25 | Epoch: 88646836300 | Chan: 83 | Freq: 921.600 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836305 | Chan: 25 | Freq: 910.000 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836310 | Chan: 20 | Freq: 909.000 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836315 | Chan: 33 | Freq: 911.600 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836320 | Chan: 40 | Freq: 913.000 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836325 | Chan: 94 | Freq: 923.800 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836330 | Chan: 98 | Freq: 924.600 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836335 | Chan: 81 | Freq: 921.200 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836340 | Chan: 14 | Freq: 907.800 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836345 | Chan: 16 | Freq: 908.200 MHz
+[TOD Hop] 20:25:26 | Epoch: 88646836350 | Chan: 36 | Freq: 912.200 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836355 | Chan: 11 | Freq: 907.200 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836360 | Chan: 87 | Freq: 922.400 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836365 | Chan: 56 | Freq: 916.200 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836370 | Chan: 77 | Freq: 920.400 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836375 | Chan: 74 | Freq: 919.800 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836380 | Chan: 97 | Freq: 924.400 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836385 | Chan: 18 | Freq: 908.600 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836390 | Chan: 83 | Freq: 921.600 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836395 | Chan: 50 | Freq: 915.000 MHz
+[TOD Hop] 20:25:27 | Epoch: 88646836400 | Chan: 96 | Freq: 924.200 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836405 | Chan: 23 | Freq: 909.600 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836410 | Chan: 66 | Freq: 918.200 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836415 | Chan: 69 | Freq: 918.800 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836420 | Chan: 82 | Freq: 921.400 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836425 | Chan: 31 | Freq: 911.200 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836430 | Chan: 66 | Freq: 918.200 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836435 | Chan: 32 | Freq: 911.400 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836440 | Chan: 1 | Freq: 905.200 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836445 | Chan: 50 | Freq: 915.000 MHz
+[TOD Hop] 20:25:28 | Epoch: 88646836450 | Chan: 72 | Freq: 919.400 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836455 | Chan: 76 | Freq: 920.200 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836460 | Chan: 90 | Freq: 923.000 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836465 | Chan: 68 | Freq: 918.600 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836470 | Chan: 24 | Freq: 909.800 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836475 | Chan: 35 | Freq: 912.000 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836480 | Chan: 52 | Freq: 915.400 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836485 | Chan: 98 | Freq: 924.600 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836490 | Chan: 64 | Freq: 917.800 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836495 | Chan: 61 | Freq: 917.200 MHz
+[TOD Hop] 20:25:29 | Epoch: 88646836500 | Chan: 72 | Freq: 919.400 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836505 | Chan: 51 | Freq: 915.200 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836510 | Chan: 29 | Freq: 910.800 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836515 | Chan: 80 | Freq: 921.000 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836520 | Chan: 19 | Freq: 908.800 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836525 | Chan: 17 | Freq: 908.400 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836530 | Chan: 73 | Freq: 919.600 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836535 | Chan: 11 | Freq: 907.200 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836540 | Chan: 48 | Freq: 914.600 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836545 | Chan: 81 | Freq: 921.200 MHz
+[TOD Hop] 20:25:30 | Epoch: 88646836550 | Chan: 86 | Freq: 922.200 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836555 | Chan: 71 | Freq: 919.200 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836560 | Chan: 25 | Freq: 910.000 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836565 | Chan: 58 | Freq: 916.600 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836570 | Chan: 9 | Freq: 906.800 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836575 | Chan: 65 | Freq: 918.000 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836580 | Chan: 15 | Freq: 908.000 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836585 | Chan: 18 | Freq: 908.600 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836590 | Chan: 2 | Freq: 905.400 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836595 | Chan: 84 | Freq: 921.800 MHz
+[TOD Hop] 20:25:31 | Epoch: 88646836600 | Chan: 49 | Freq: 914.800 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836605 | Chan: 69 | Freq: 918.800 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836610 | Chan: 21 | Freq: 909.200 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836615 | Chan: 60 | Freq: 917.000 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836620 | Chan: 33 | Freq: 911.600 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836625 | Chan: 9 | Freq: 906.800 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836630 | Chan: 79 | Freq: 920.800 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836635 | Chan: 34 | Freq: 911.800 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836640 | Chan: 71 | Freq: 919.200 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836645 | Chan: 23 | Freq: 909.600 MHz
+[TOD Hop] 20:25:32 | Epoch: 88646836650 | Chan: 39 | Freq: 912.800 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836655 | Chan: 18 | Freq: 908.600 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836660 | Chan: 33 | Freq: 911.600 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836665 | Chan: 20 | Freq: 909.000 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836670 | Chan: 83 | Freq: 921.600 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836675 | Chan: 98 | Freq: 924.600 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836680 | Chan: 79 | Freq: 920.800 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836685 | Chan: 91 | Freq: 923.200 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836690 | Chan: 64 | Freq: 917.800 MHz
+[TOD Hop] 20:25:33 | Epoch: 88646836695 | Chan: 38 | Freq: 912.600 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836705 | Chan: 14 | Freq: 907.800 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836710 | Chan: 62 | Freq: 917.400 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836715 | Chan: 81 | Freq: 921.200 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836720 | Chan: 84 | Freq: 921.800 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836725 | Chan: 68 | Freq: 918.600 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836730 | Chan: 4 | Freq: 905.800 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836735 | Chan: 67 | Freq: 918.400 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836740 | Chan: 94 | Freq: 923.800 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836745 | Chan: 54 | Freq: 915.800 MHz
+[TOD Hop] 20:25:34 | Epoch: 88646836750 | Chan: 62 | Freq: 917.400 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836755 | Chan: 31 | Freq: 911.200 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836760 | Chan: 74 | Freq: 919.800 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836765 | Chan: 81 | Freq: 921.200 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836770 | Chan: 87 | Freq: 922.400 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836775 | Chan: 18 | Freq: 908.600 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836780 | Chan: 51 | Freq: 915.200 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836785 | Chan: 92 | Freq: 923.400 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836790 | Chan: 49 | Freq: 914.800 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836795 | Chan: 24 | Freq: 909.800 MHz
+[TOD Hop] 20:25:35 | Epoch: 88646836800 | Chan: 74 | Freq: 919.800 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836805 | Chan: 66 | Freq: 918.200 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836810 | Chan: 40 | Freq: 913.000 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836815 | Chan: 85 | Freq: 922.000 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836820 | Chan: 28 | Freq: 910.600 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836825 | Chan: 96 | Freq: 924.200 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836830 | Chan: 50 | Freq: 915.000 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836835 | Chan: 95 | Freq: 924.000 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836840 | Chan: 32 | Freq: 911.400 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836845 | Chan: 6 | Freq: 906.200 MHz
+[TOD Hop] 20:25:36 | Epoch: 88646836850 | Chan: 64 | Freq: 917.800 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:33:19 2026] ---
+--- [OPAL VANGUARD] LEVEL_7_OFDM_MASTER ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:33:20 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 20:33:24 | Epoch: 1772937205 | Chan: 10 | Freq: 915.000 MHz
+[TOD Hop] 20:33:29 | Epoch: 1772937210 | Chan: 4 | Freq: 914.100 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:40:54 2026] ---
+--- [OPAL VANGUARD] LEVEL_7_OFDM_MASTER ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:40:56 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 20:40:59 | Epoch: 1772937660 | Chan: 13 | Freq: 915.450 MHz
+[TOD Hop] 20:41:04 | Epoch: 1772937665 | Chan: 2 | Freq: 913.800 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 20:43:06 2026] ---
+--- [OPAL VANGUARD] LEVEL_7_OFDM_MASTER ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 20:43:07 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 20:43:09 | Epoch: 1772937790 | Chan: 16 | Freq: 915.900 MHz
+[TOD Hop] 20:43:14 | Epoch: 1772937795 | Chan: 11 | Freq: 915.150 MHz
+[TOD Hop] 20:43:19 | Epoch: 1772937800 | Chan: 7 | Freq: 914.550 MHz
+[TOD Hop] 20:43:24 | Epoch: 1772937805 | Chan: 6 | Freq: 914.400 MHz
+[TOD Hop] 20:43:29 | Epoch: 1772937810 | Chan: 3 | Freq: 913.950 MHz
+[TOD Hop] 20:43:34 | Epoch: 1772937815 | Chan: 6 | Freq: 914.400 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 21:33:07 2026] ---
+--- [OPAL VANGUARD] LEVEL_7_OFDM_MASTER ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 21:33:09 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 21:33:10 | Epoch: 1772940790 | Chan: 7 | Freq: 914.550 MHz
+[TOD Hop] 21:33:15 | Epoch: 1772940795 | Chan: 1 | Freq: 913.650 MHz
+[TOD Hop] 21:33:20 | Epoch: 1772940800 | Chan: 11 | Freq: 915.150 MHz
+[TOD Hop] 21:33:25 | Epoch: 1772940805 | Chan: 6 | Freq: 914.400 MHz
+[TOD Hop] 21:33:30 | Epoch: 1772940810 | Chan: 4 | Freq: 914.100 MHz
+[TOD Hop] 21:33:35 | Epoch: 1772940815 | Chan: 16 | Freq: 915.900 MHz
+[TOD Hop] 21:33:40 | Epoch: 1772940820 | Chan: 12 | Freq: 915.300 MHz
+[TOD Hop] 21:33:45 | Epoch: 1772940825 | Chan: 4 | Freq: 914.100 MHz
+[TOD Hop] 21:33:50 | Epoch: 1772940830 | Chan: 14 | Freq: 915.600 MHz
+[TOD Hop] 21:33:55 | Epoch: 1772940835 | Chan: 17 | Freq: 916.050 MHz
+[TOD Hop] 21:34:00 | Epoch: 1772940840 | Chan: 17 | Freq: 916.050 MHz
+[TOD Hop] 21:34:05 | Epoch: 1772940845 | Chan: 15 | Freq: 915.750 MHz
+[TOD Hop] 21:34:10 | Epoch: 1772940850 | Chan: 5 | Freq: 914.250 MHz
+[TOD Hop] 21:34:15 | Epoch: 1772940855 | Chan: 14 | Freq: 915.600 MHz
+[TOD Hop] 21:34:20 | Epoch: 1772940860 | Chan: 9 | Freq: 914.850 MHz
+[TOD Hop] 21:34:25 | Epoch: 1772940865 | Chan: 17 | Freq: 916.050 MHz
+[TOD Hop] 21:34:30 | Epoch: 1772940870 | Chan: 15 | Freq: 915.750 MHz
+[TOD Hop] 21:34:35 | Epoch: 1772940875 | Chan: 15 | Freq: 915.750 MHz
+[TOD Hop] 21:34:40 | Epoch: 1772940880 | Chan: 17 | Freq: 916.050 MHz
+[TOD Hop] 21:34:45 | Epoch: 1772940885 | Chan: 5 | Freq: 914.250 MHz
+[TOD Hop] 21:34:50 | Epoch: 1772940890 | Chan: 18 | Freq: 916.200 MHz
+[TOD Hop] 21:34:55 | Epoch: 1772940895 | Chan: 9 | Freq: 914.850 MHz
+[TOD Hop] 21:35:00 | Epoch: 1772940900 | Chan: 5 | Freq: 914.250 MHz
+[TOD Hop] 21:35:05 | Epoch: 1772940905 | Chan: 5 | Freq: 914.250 MHz
+[TOD Hop] 21:35:10 | Epoch: 1772940910 | Chan: 8 | Freq: 914.700 MHz
+[TOD Hop] 21:35:15 | Epoch: 1772940915 | Chan: 1 | Freq: 913.650 MHz
+[TOD Hop] 21:35:20 | Epoch: 1772940920 | Chan: 11 | Freq: 915.150 MHz
+[TOD Hop] 21:35:25 | Epoch: 1772940925 | Chan: 7 | Freq: 914.550 MHz
+[TOD Hop] 21:35:30 | Epoch: 1772940930 | Chan: 1 | Freq: 913.650 MHz
+[TOD Hop] 21:35:35 | Epoch: 1772940935 | Chan: 3 | Freq: 913.950 MHz
+[TOD Hop] 21:35:40 | Epoch: 1772940940 | Chan: 1 | Freq: 913.650 MHz
+[TOD Hop] 21:35:45 | Epoch: 1772940945 | Chan: 12 | Freq: 915.300 MHz
+[TOD Hop] 21:35:50 | Epoch: 1772940950 | Chan: 10 | Freq: 915.000 MHz
+[TOD Hop] 21:35:55 | Epoch: 1772940955 | Chan: 8 | Freq: 914.700 MHz
+[TOD Hop] 21:36:00 | Epoch: 1772940960 | Chan: 9 | Freq: 914.850 MHz
+[TOD Hop] 21:36:05 | Epoch: 1772940965 | Chan: 14 | Freq: 915.600 MHz
+[TOD Hop] 21:36:10 | Epoch: 1772940970 | Chan: 10 | Freq: 915.000 MHz
+[TOD Hop] 21:36:15 | Epoch: 1772940975 | Chan: 7 | Freq: 914.550 MHz
+[TOD Hop] 21:36:20 | Epoch: 1772940980 | Chan: 11 | Freq: 915.150 MHz
+[TOD Hop] 21:36:25 | Epoch: 1772940985 | Chan: 17 | Freq: 916.050 MHz
+[TOD Hop] 21:36:30 | Epoch: 1772940990 | Chan: 9 | Freq: 914.850 MHz
+[TOD Hop] 21:36:35 | Epoch: 1772940995 | Chan: 6 | Freq: 914.400 MHz
+[TOD Hop] 21:36:40 | Epoch: 1772941000 | Chan: 0 | Freq: 913.500 MHz
+[TOD Hop] 21:36:45 | Epoch: 1772941005 | Chan: 0 | Freq: 913.500 MHz
+[TOD Hop] 21:36:50 | Epoch: 1772941010 | Chan: 0 | Freq: 913.500 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sat Mar  7 21:49:19 2026] ---
+--- [OPAL VANGUARD] LEVEL_7_OFDM_MASTER ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 21:49:21 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 21:49:25 | Epoch: 1772941765 | Chan: 16 | Freq: 915.900 MHz
+[TOD Hop] 21:49:30 | Epoch: 1772941770 | Chan: 18 | Freq: 916.200 MHz
+[TOD Hop] 21:49:35 | Epoch: 1772941775 | Chan: 12 | Freq: 915.300 MHz
+
+--- [BRAVO MISSION OBSERVER START: Sun Mar  8 20:14:31 2026] ---
+--- [OPAL VANGUARD] LEVEL_1_SOFT_LINK ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sun Mar  8 20:14:32 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sun Mar  8 20:14:54 2026] ---
+--- [OPAL VANGUARD] LEVEL_2_REPAIRABLE ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sun Mar  8 20:14:56 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 014 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 015 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 016 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 017 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 019 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 020 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 021 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 022 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 023 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 026 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sun Mar  8 20:15:36 2026] ---
+--- [OPAL VANGUARD] LEVEL_3_RESILIENT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sun Mar  8 20:15:38 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sun Mar  8 20:15:59 2026] ---
+--- [OPAL VANGUARD] LEVEL_4_STEALTH ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sun Mar  8 20:16:00 2026
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 012 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 014 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sun Mar  8 20:16:30 2026] ---
+--- [OPAL VANGUARD] LEVEL_5_BLACKOUT ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sun Mar  8 20:16:31 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 001 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 002 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[TOD Hop] 20:16:35 | Epoch: 1773018995 | Chan: 14 | Freq: 915.160 MHz
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 008 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:16:40 | Epoch: 1773019000 | Chan: 11 | Freq: 915.040 MHz
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+
+--- [BRAVO MISSION OBSERVER START: Sun Mar  8 20:16:56 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sun Mar  8 20:16:58 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 1.00
+[SESSION] RX SYN | State: IDLE
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[TOD Hop] 20:17:00 | Epoch: 1773019020 | Chan: 0 | Freq: 914.550 MHz
+[92m[OK][0m ID: 003 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 004 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 005 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 006 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 007 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:17:04 | Epoch: 1773019025 | Chan: 3 | Freq: 915.000 MHz
+[92m[OK][0m ID: 009 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 010 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 011 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 012 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[TOD Hop] 20:17:09 | Epoch: 1773019030 | Chan: 0 | Freq: 914.550 MHz
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 013 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 015 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED
+[92m[OK][0m ID: 000 | TYPE: ACK | RX: b'' | CONF: 1.00
+[SESSION] RX ACK | State: CONNECTED
+[92m[OK][0m ID: 016 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 1.00
+[SESSION] RX DATA | State: CONNECTED

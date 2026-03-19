@@ -86,34 +86,44 @@
 
 ## Phase 4: The Vignette - Project Opal Vanguard
 
-## Slide 10: The Challenge: Custom DF-OFDM
-- **Key Message:** Complex signals require complex solutions.
-- **Visual Idea:** A messy spectrogram of a frequency-hopping signal.
+## Slide 10: The Evolution: Tactical SDR to Neural Receiver
+- **Key Message:** Project Opal Vanguard is a high-resiliency tactical transceiver, not just a lab experiment.
+- **Visual Idea:** A high-level block diagram showing the evolution from a simple GNU Radio flowgraph to a multi-waveform (GFSK, DQPSK, CCSK, CSS) system.
 - **Talking Points:**
-    - Problem: Manual classification of DF-OFDM is slow and prone to phase errors.
-    - Requirements: 120-byte stability frames, 500ms hopping.
-    - The "Needle in the Haystack" problem in RF.
+    - The challenge was moving from idealized simulations to a field-ready transceiver.
+    - **Key Specs:** 120-byte tactical blocks with 15-row matrix interleaving for error resiliency.
+    - **Security:** AES-CTR crypto-sync and NRZ-I phase resilience to survive signal fading.
+    - **The Physics Bottleneck:** Dealing with the USRP "Tag Paradox" (timing/scaling errors) and the CFO-induced "Donut" constellations that confuse standard AI models.
 
-## Slide 11: The AI Solution: Neural Receivers
-- **Key Message:** Replacing manual logic with learned patterns.
-- **Visual Idea:** A flowgraph showing Signal -> Neural Receiver (TensorFlow/Sionna) -> Classified Data.
+## Slide 11: The AI Solution: Breaking the Bottleneck
+- **Key Message:** Gemini wasn't just writing boilerplate; it was solving complex signal processing logic.
+- **Visual Idea:** A "Before vs. After" comparison of constellation diagrams (Donuts vs. Blobs) and a code snippet showing a NumPy vectorized operation.
 - **Talking Points:**
-    - Using Gemini to build the C++ correlators for phase-inversion resilience.
-    - Software-Defined Timing Scanner: Automatically aligning FFT windows.
-    - AI isn't *guessing*; it's performing high-speed pattern matching.
+    - **Super-Vectorization:** Replacing thousands of nested Python loops with NumPy matrix-matrix multiplications (`np.dot`), reducing CPU overhead by 90%.
+    - **FFT-Lock Frequency Estimation:** Using AI-assisted DSP code to lock onto a 50kHz pilot, transforming unreadable "donuts" into mod-distinguishable "blobs."
+    - **Threaded Offload:** Decoupling the fast syncword search from heavy FEC/CCSK math to allow for real-time 2.0 Msps operation.
 
-## Slide 12: Impact & Results
-- **Key Message:** Mission success at speed.
-- **Visual Idea:** A chart showing "Time to Classification" dropping from weeks to days.
+## Slide 12: Vanguard Data Factory (VDF) & Specter's Edge
+- **Key Message:** Training on real-world "dirty" data is the only way to reach mission-ready status.
+- **Visual Idea:** A photo or graphic of the "Hardware Trinity": 3x USRPs (TX, RX, and Adversary) working in sync.
 - **Talking Points:**
-    - Real-world results: Level 7 OFDM Master achieved.
-    - Reproducible, automated workflows that can be shared across the Wing.
+    - **VDF:** An automated pipeline for industrial-scale data harvesting.
+    - **Mission: Specter's Edge:** A "Mega-Harvest" of 250,000+ snapshots of real-world hardware data.
+    - This diversity (sweeping gains, drift levels, and offsets) ensures the model doesn't just learn a lab environment—it learns the "Reality of the Wire."
+
+## Slide 13: Impact & Results
+- **Key Message:** We achieved Level 9 "Deep Shadow" and stabilized the entire tactical baseline.
+- **Visual Idea:** A 100% pass mark for the 18-point regression suite.
+- **Talking Points:**
+    - **Level 9 Realized:** Chirp Spread Spectrum (CSS) is now operational and ultra-resilient.
+    - **Efficiency:** The time to generate a full mission dataset and refine a model has dropped from months to hours.
+    - **Status:** Level 7 OFDM Master and Level 9 CSS Master status officially achieved.
 
 ---
 
 ## Phase 5: The Path Forward
 
-## Slide 13: The Path to "S" (Secret)
+## Slide 14: The Path to "S" (Secret)
 - **Key Message:** Bringing AI into the secured space.
 - **Visual Idea:** A secure vault door with a server rack inside.
 - **Talking Points:**
@@ -121,7 +131,7 @@
     - **Roadmap:** Deploying localized AI nodes (Ollama/Custom builds) in air-gapped spaces.
     - **Data Sovereignty:** Keeping our most sensitive data off the wire.
 
-## Slide 14: Conclusion / Q&A
+## Slide 15: Conclusion / Q&A
 - **Key Message:** Start small, think disciplined, scale fast.
 - **Talking Points:**
     - AI is ready for the Wing today.

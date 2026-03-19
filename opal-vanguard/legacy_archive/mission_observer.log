@@ -1,0 +1,1177 @@
+
+--- [MISSION OBSERVER START: Sat Mar  7 12:46:23 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 12:46:25 2026
+[TERMINAL] COMSEC ENABLED
+Traceback (most recent call last):
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 260, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 258, in main
+    args = parser.parse_args(); qapp = Qt.QApplication(sys.argv); tb = OpalVanguardUSRP(args.role, args.serial, args.config); tb.start(); tb.show(); qapp.exec_()
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 204, in __init__
+    self.msg_connect((self.pdu_src, src_port), (self.session, "data_in")); self.msg_connect((self.session, "pkt_out"), (self.pkt_a, "in")); self.msg_connect((self.pkt_a, "out"), (self.p2s_a, "pdus"))
+                      ^^^^^^^^^^^^
+AttributeError: 'OpalVanguardUSRP' object has no attribute 'pdu_src'
+
+--- [MISSION OBSERVER START: Sat Mar  7 12:51:27 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 12:51:28 2026
+[TERMINAL] COMSEC ENABLED
+Traceback (most recent call last):
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 267, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 265, in main
+    args = parser.parse_args(); qapp = Qt.QApplication(sys.argv); tb = OpalVanguardUSRP(args.role, args.serial, args.config); tb.start(); tb.show(); qapp.exec_()
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev2/opal-vanguard/src/usrp_transceiver.py", line 215, in __init__
+    self.msg_connect((self.depkt_b, "out"), (self.session, "msg_in")); self.msg_connect((self.depkt_b, "diagnostics"), (self.session, "crc_fail")); self.msg_connect((self.session, "blacklist_out"), (self.hop_ctrl, "blacklist"))
+                                                                                                                                                                                                       ^^^^^^^^^^^^^
+AttributeError: 'OpalVanguardUSRP' object has no attribute 'hop_ctrl'
+
+--- [MISSION OBSERVER START: Sat Mar  7 15:44:02 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+FATAL USRP: LookupError: KeyError: No devices found for ----->
+Device Address:
+    type: b200
+    serial: 3449AC1
+
+
+--- [MISSION OBSERVER START: Sat Mar  7 15:44:20 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 15:44:32 2026
+[TERMINAL] COMSEC ENABLED
+[TOD Hop] Epoch: 3545839750 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] Epoch: 3545839755 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] Epoch: 3545839760 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] Epoch: 3545839765 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] Epoch: 3545839770 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] Epoch: 3545839775 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] Epoch: 3545839780 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] Epoch: 3545839785 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] Epoch: 3545839790 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] Epoch: 3545839795 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] Epoch: 3545839800 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] Epoch: 3545839805 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] Epoch: 3545839810 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] Epoch: 3545839815 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] Epoch: 3545839820 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] Epoch: 3545839825 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] Epoch: 3545839830 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] Epoch: 3545839835 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] Epoch: 3545839840 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] Epoch: 3545839845 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] Epoch: 3545839850 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] Epoch: 3545839855 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] Epoch: 3545839860 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] Epoch: 3545839865 | Chan: 0 | Freq: 914.550 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 15:52:43 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 15:52:44 2026
+[TERMINAL] COMSEC ENABLED
+[TOD Hop] Epoch: 1772920365 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 099 | LEN: 88
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 15
+[TOD Hop] Epoch: 1772920370 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 082 | LEN: 88
+[TOD Hop] Epoch: 1772920375 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 082 | LEN: 88
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920380 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 159
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920385 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 099 | LEN: 88
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920390 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 082 | LEN: 88
+[91m[CRC FAIL][0m ID: 082 | LEN: 125
+[91m[CRC FAIL][0m ID: 000 | LEN: 125
+[TOD Hop] Epoch: 1772920395 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920400 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 125
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920405 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+
+--- [MISSION OBSERVER START: Sat Mar  7 15:55:03 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 15:55:04 2026
+[TERMINAL] COMSEC ENABLED
+[TOD Hop] Epoch: 1772920505 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 082 | LEN: 125
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920510 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920515 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 125
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920520 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 125
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 72
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920525 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 159
+[91m[CRC FAIL][0m ID: 099 | LEN: 88
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920530 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 049 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+
+--- [MISSION OBSERVER START: Sat Mar  7 15:59:25 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 15:59:27 2026
+[TERMINAL] COMSEC ENABLED
+[TOD Hop] Epoch: 1772920770 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 049 | LEN: 224
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 082 | LEN: 1
+[91m[CRC FAIL][0m ID: 000 | LEN: 15
+[91m[CRC FAIL][0m ID: 082 | LEN: 135
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 199
+[TOD Hop] Epoch: 1772920775 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920780 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920785 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920790 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 099 | LEN: 203
+[91m[CRC FAIL][0m ID: 074 | LEN: 124
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] Epoch: 1772920795 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:03:16 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:03:18 2026
+[TERMINAL] COMSEC ENABLED
+[TOD Hop] 16:03:20 | Epoch: 1772921000 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 148 | LEN: 205
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 165 | LEN: 244
+[91m[CRC FAIL][0m ID: 000 | LEN: 142
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 099 | LEN: 63
+[91m[CRC FAIL][0m ID: 000 | LEN: 113
+[TOD Hop] 16:03:25 | Epoch: 1772921005 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 123 | LEN: 89
+[91m[CRC FAIL][0m ID: 247 | LEN: 128
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 049 | LEN: 179
+[91m[CRC FAIL][0m ID: 041 | LEN: 86
+[91m[CRC FAIL][0m ID: 049 | LEN: 223
+[TOD Hop] 16:03:30 | Epoch: 1772921010 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 220
+[91m[CRC FAIL][0m ID: 165 | LEN: 25
+[91m[CRC FAIL][0m ID: 049 | LEN: 113
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 165 | LEN: 92
+[TOD Hop] 16:03:35 | Epoch: 1772921015 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 222
+[91m[CRC FAIL][0m ID: 049 | LEN: 127
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] 16:03:40 | Epoch: 1772921020 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 049 | LEN: 174
+[91m[CRC FAIL][0m ID: 000 | LEN: 232
+[91m[CRC FAIL][0m ID: 165 | LEN: 241
+[91m[CRC FAIL][0m ID: 082 | LEN: 37
+[91m[CRC FAIL][0m ID: 049 | LEN: 61
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[TOD Hop] 16:03:45 | Epoch: 1772921025 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 099 | LEN: 33
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 184
+[TOD Hop] 16:03:50 | Epoch: 1772921030 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 074 | LEN: 88
+[91m[CRC FAIL][0m ID: 000 | LEN: 144
+[91m[CRC FAIL][0m ID: 082 | LEN: 133
+[91m[CRC FAIL][0m ID: 000 | LEN: 81
+[91m[CRC FAIL][0m ID: 000 | LEN: 75
+[91m[CRC FAIL][0m ID: 165 | LEN: 121
+[TOD Hop] 16:03:55 | Epoch: 1772921035 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 148 | LEN: 60
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 082 | LEN: 24
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 29
+[TOD Hop] 16:04:00 | Epoch: 1772921040 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 43
+[91m[CRC FAIL][0m ID: 000 | LEN: 112
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 024 | LEN: 103
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:12:29 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:12:31 2026
+[TERMINAL] COMSEC ENABLED
+[91m[CRC FAIL][0m ID: 000 | LEN: 159
+[91m[CRC FAIL][0m ID: 049 | LEN: 159
+[TOD Hop] 16:12:35 | Epoch: 1772921555 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 171 | LEN: 205
+[91m[CRC FAIL][0m ID: 082 | LEN: 125
+[91m[CRC FAIL][0m ID: 082 | LEN: 59
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 049 | LEN: 172
+[TOD Hop] 16:12:40 | Epoch: 1772921560 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 049 | LEN: 159
+[91m[CRC FAIL][0m ID: 000 | LEN: 105
+[91m[CRC FAIL][0m ID: 099 | LEN: 88
+[TOD Hop] 16:12:45 | Epoch: 1772921565 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 082 | LEN: 88
+[91m[CRC FAIL][0m ID: 000 | LEN: 30
+[91m[CRC FAIL][0m ID: 000 | LEN: 130
+[91m[CRC FAIL][0m ID: 000 | LEN: 125
+[TOD Hop] 16:12:50 | Epoch: 1772921570 | Chan: 0 | Freq: 914.550 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:25:02 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:25:03 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:25:05 | Epoch: 1772922305 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 177 | LEN: 28 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 177 | LEN: 210 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.59
+[TOD Hop] 16:25:10 | Epoch: 1772922310 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.61
+[91m[CRC FAIL][0m ID: 210 | LEN: 226 | CONF: 0.55
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 210 | LEN: 152 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 210 | LEN: 218 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 210 | LEN: 218 | CONF: 0.58
+[TOD Hop] 16:25:15 | Epoch: 1772922315 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 210 | LEN: 28 | CONF: 0.61
+[91m[CRC FAIL][0m ID: 210 | LEN: 226 | CONF: 0.54
+[TOD Hop] 16:25:20 | Epoch: 1772922320 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 177 | LEN: 20 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.60
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.57
+[TOD Hop] 16:25:25 | Epoch: 1772922325 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 210 | LEN: 160 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 119 | LEN: 28 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 119 | LEN: 94 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 144 | LEN: 218 | CONF: 0.55
+[TOD Hop] 16:25:30 | Epoch: 1772922330 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 215 | LEN: 152 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 210 | LEN: 152 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 210 | LEN: 28 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.60
+[TOD Hop] 16:25:35 | Epoch: 1772922335 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 119 | LEN: 160 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 115 | LEN: 86 | CONF: 0.53
+[91m[CRC FAIL][0m ID: 119 | LEN: 94 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 210 | LEN: 94 | CONF: 0.58
+[TOD Hop] 16:25:40 | Epoch: 1772922340 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 210 | LEN: 152 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 119 | LEN: 160 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 210 | LEN: 160 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 119 | LEN: 152 | CONF: 0.54
+[91m[CRC FAIL][0m ID: 144 | LEN: 218 | CONF: 0.52
+[TOD Hop] 16:25:45 | Epoch: 1772922345 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 119 | LEN: 86 | CONF: 0.55
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:27:46 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:27:48 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[91m[CRC FAIL][0m ID: 000 | LEN: 192 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:27:50 | Epoch: 1772922470 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[91m[CRC FAIL][0m ID: 000 | LEN: 72 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.56
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 15 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 159 | CONF: 0.54
+[TOD Hop] 16:27:55 | Epoch: 1772922475 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 099 | LEN: 88 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 189 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 049 | LEN: 217 | CONF: 0.57
+[TOD Hop] 16:28:00 | Epoch: 1772922480 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.53
+[91m[CRC FAIL][0m ID: 000 | LEN: 248 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 125 | CONF: 0.57
+[TOD Hop] 16:28:05 | Epoch: 1772922485 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 180 | CONF: 0.61
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 000 | LEN: 218 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 049 | LEN: 159 | CONF: 0.53
+[TOD Hop] 16:28:10 | Epoch: 1772922490 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 049 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:28:15 | Epoch: 1772922495 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 20 | CONF: 0.61
+[91m[CRC FAIL][0m ID: 049 | LEN: 91 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 049 | LEN: 159 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 165 | LEN: 252 | CONF: 0.61
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:32:26 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:32:27 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[91m[CRC FAIL][0m ID: 000 | LEN: 120 | CONF: 0.55
+[TOD Hop] 16:32:30 | Epoch: 1772922750 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 114 | LEN: 135 | CONF: 0.53
+[91m[CRC FAIL][0m ID: 107 | LEN: 212 | CONF: 0.53
+[91m[CRC FAIL][0m ID: 206 | LEN: 222 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 033 | LEN: 96 | CONF: 0.61
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 15 | CONF: 0.61
+[91m[CRC FAIL][0m ID: 000 | LEN: 46 | CONF: 0.57
+[TOD Hop] 16:32:35 | Epoch: 1772922755 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 101 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 033 | LEN: 26 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 066 | LEN: 214 | CONF: 0.56
+[TOD Hop] 16:32:40 | Epoch: 1772922760 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 099 | LEN: 197 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 173 | LEN: 89 | CONF: 0.55
+[TOD Hop] 16:32:45 | Epoch: 1772922765 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 142 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 173 | LEN: 208 | CONF: 0.53
+[91m[CRC FAIL][0m ID: 206 | LEN: 150 | CONF: 0.52
+[TOD Hop] 16:32:50 | Epoch: 1772922770 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 220 | CONF: 0.57
+[TOD Hop] 16:32:55 | Epoch: 1772922775 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 099 | LEN: 228 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.58
+[TOD Hop] 16:33:00 | Epoch: 1772922780 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.62
+[91m[CRC FAIL][0m ID: 173 | LEN: 88 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 206 | LEN: 154 | CONF: 0.55
+[TOD Hop] 16:33:05 | Epoch: 1772922785 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 033 | LEN: 96 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:33:10 | Epoch: 1772922790 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 173 | LEN: 88 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 140 | LEN: 22 | CONF: 0.53
+[TOD Hop] 16:33:15 | Epoch: 1772922795 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 033 | LEN: 30 | CONF: 0.55
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.63
+[91m[CRC FAIL][0m ID: 206 | LEN: 154 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 033 | LEN: 96 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:33:20 | Epoch: 1772922800 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 140 | LEN: 22 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[91m[CRC FAIL][0m ID: 033 | LEN: 96 | CONF: 0.59
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:34:28 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:34:29 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=02010081
+[91m[CRC FAIL][0m ID: 000 | LEN: 129 | CONF: 0.59
+[TOD Hop] 16:34:30 | Epoch: 1772922870 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201005c
+[91m[CRC FAIL][0m ID: 000 | LEN: 92 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=01010060
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.61
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[TOD Hop] 16:34:35 | Epoch: 1772922875 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=8612c981 | White=016bad00 | Final=0105000f
+[91m[CRC FAIL][0m ID: 000 | LEN: 15 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0130efdc
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.61
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6480 | White=01d30001 | Final=01110060
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=01010060
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.57
+[TOD Hop] 16:34:40 | Epoch: 1772922880 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0130efdc
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0130acd4
+[91m[CRC FAIL][0m ID: 172 | LEN: 212 | CONF: 0.56
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=01010060
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.58
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=010100dc
+[91m[CRC FAIL][0m ID: 000 | LEN: 220 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:34:45 | Epoch: 1772922885 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=02010084
+[91m[CRC FAIL][0m ID: 000 | LEN: 132 | CONF: 0.58
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101efdc
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.57
+[TOD Hop] 16:34:50 | Epoch: 1772922890 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=020100f4
+[91m[CRC FAIL][0m ID: 000 | LEN: 244 | CONF: 0.63
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[TOD Hop] 16:34:55 | Epoch: 1772922895 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=01010060
+[91m[CRC FAIL][0m ID: 000 | LEN: 96 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[TOD Hop] 16:35:00 | Epoch: 1772922900 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101ef9a
+[91m[CRC FAIL][0m ID: 239 | LEN: 154 | CONF: 0.56
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0130efdc
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.57
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:38:25 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:38:26 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+Decode Error: list index out of range
+Decode Error: list index out of range
+[TOD Hop] 16:38:30 | Epoch: 1772923110 | Chan: 1 | Freq: 914.700 MHz
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+[TOD Hop] 16:38:35 | Epoch: 1772923115 | Chan: 5 | Freq: 915.300 MHz
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+Decode Error: list index out of range
+[TOD Hop] 16:38:40 | Epoch: 1772923120 | Chan: 1 | Freq: 914.700 MHz
+Decode Error: list index out of range
+Decode Error: list index out of range
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:44:06 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:44:07 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:44:10 | Epoch: 1772923450 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 206 | LEN: 154 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:44:15 | Epoch: 1772923455 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 15 | CONF: 0.60
+[TOD Hop] 16:44:20 | Epoch: 1772923460 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 206 | LEN: 88 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 000 | LEN: 220 | CONF: 0.54
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:44:25 | Epoch: 1772923465 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:44:30 | Epoch: 1772923470 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[TOD Hop] 16:44:35 | Epoch: 1772923475 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.57
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.63
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:44:40 | Epoch: 1772923480 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 239 | LEN: 220 | CONF: 0.56
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.56
+[TOD Hop] 16:44:45 | Epoch: 1772923485 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 186 | CONF: 0.54
+[91m[CRC FAIL][0m ID: 000 | LEN: 212 | CONF: 0.58
+[91m[CRC FAIL][0m ID: 239 | LEN: 30 | CONF: 0.59
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:46:38 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:46:39 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:46:40 | Epoch: 1772923600 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=010142a2
+[91m[CRC FAIL][0m ID: 066 | LEN: 162 | CONF: 0.58
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=010196de
+[91m[CRC FAIL][0m ID: 150 | LEN: 222 | CONF: 0.51
+[TOD Hop] 16:46:45 | Epoch: 1772923605 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Chain: Raw=86f46481 | White=018d0000 | Final=0105000f
+[91m[CRC FAIL][0m ID: 000 | LEN: 15 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:46:50 | Epoch: 1772923610 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=85ac7589 | White=02d51108 | Final=02684ff4
+[TOD Hop] 16:46:55 | Epoch: 1772923615 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 079 | LEN: 244 | CONF: 0.54
+[DEBUG] Chain: Raw=8680e73c | White=01f983bd | Final=01e62449
+[91m[CRC FAIL][0m ID: 036 | LEN: 73 | CONF: 0.54
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101219c
+[91m[CRC FAIL][0m ID: 033 | LEN: 156 | CONF: 0.56
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:47:00 | Epoch: 1772923620 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.62
+[TOD Hop] 16:47:05 | Epoch: 1772923625 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:47:10 | Epoch: 1772923630 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.62
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.62
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=020100d1
+[TOD Hop] 16:47:15 | Epoch: 1772923635 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 209 | CONF: 0.58
+[DEBUG] Chain: Raw=82e0647c | White=059900fd | Final=0520ce9a
+[91m[CRC FAIL][0m ID: 206 | LEN: 154 | CONF: 0.56
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=0201001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.62
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:47:20 | Epoch: 1772923640 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.62
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:47:25 | Epoch: 1772923645 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[TOD Hop] 16:47:30 | Epoch: 1772923650 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:47:35 | Epoch: 1772923655 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:47:40 | Epoch: 1772923660 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=02e017fd
+[91m[CRC FAIL][0m ID: 023 | LEN: 253 | CONF: 0.56
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.64
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:47:45 | Epoch: 1772923665 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.61
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.64
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:47:50 | Epoch: 1772923670 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001a
+[91m[CRC FAIL][0m ID: 000 | LEN: 26 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[TOD Hop] 16:47:55 | Epoch: 1772923675 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.66
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:48:00 | Epoch: 1772923680 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:48:05 | Epoch: 1772923685 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=010100c3
+[91m[CRC FAIL][0m ID: 000 | LEN: 195 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=01a7729f
+[91m[CRC FAIL][0m ID: 114 | LEN: 159 | CONF: 0.52
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:48:10 | Epoch: 1772923690 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:48:15 | Epoch: 1772923695 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.60
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[TOD Hop] 16:48:20 | Epoch: 1772923700 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.59
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+[DEBUG] Chain: Raw=86aa6481 | White=01d30000 | Final=0101001e
+[91m[CRC FAIL][0m ID: 000 | LEN: 30 | CONF: 0.58
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:50:12 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:50:14 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:50:15 | Epoch: 1772923815 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:50:20 | Epoch: 1772923820 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:50:25 | Epoch: 1772923825 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 16:50:30 | Epoch: 1772923830 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:50:35 | Epoch: 1772923835 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:50:40 | Epoch: 1772923840 | Chan: 0 | Freq: 914.550 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 180 | CONF: 0.77
+[TOD Hop] 16:50:45 | Epoch: 1772923845 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:50:50 | Epoch: 1772923850 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 226 | CONF: 0.75
+[TOD Hop] 16:50:55 | Epoch: 1772923855 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:51:00 | Epoch: 1772923860 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:51:05 | Epoch: 1772923865 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:51:10 | Epoch: 1772923870 | Chan: 1 | Freq: 914.700 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:52:17 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:52:18 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:52:20 | Epoch: 1772923940 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:52:25 | Epoch: 1772923945 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:52:30 | Epoch: 1772923950 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:52:35 | Epoch: 1772923955 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 16:52:40 | Epoch: 1772923960 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:52:45 | Epoch: 1772923965 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 16:52:50 | Epoch: 1772923970 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:52:55 | Epoch: 1772923975 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:53:00 | Epoch: 1772923980 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:53:05 | Epoch: 1772923985 | Chan: 0 | Freq: 914.550 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:53:45 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:53:46 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:53:50 | Epoch: 1772924030 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:53:55 | Epoch: 1772924035 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:54:00 | Epoch: 1772924040 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 16:54:05 | Epoch: 1772924045 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:54:10 | Epoch: 1772924050 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 16:54:15 | Epoch: 1772924055 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:54:20 | Epoch: 1772924060 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:54:25 | Epoch: 1772924065 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 16:54:30 | Epoch: 1772924070 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Chain: Raw=85aa6481 | White=02d30000 | Final=02010010
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.75
+[TOD Hop] 16:54:35 | Epoch: 1772924075 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:54:40 | Epoch: 1772924080 | Chan: 3 | Freq: 915.000 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 16:56:00 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 16:56:02 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 16:56:05 | Epoch: 1772924165 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:56:10 | Epoch: 1772924170 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:56:15 | Epoch: 1772924175 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:56:20 | Epoch: 1772924180 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 16:56:25 | Epoch: 1772924185 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 16:56:30 | Epoch: 1772924190 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:56:35 | Epoch: 1772924195 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:56:40 | Epoch: 1772924200 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:56:45 | Epoch: 1772924205 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 16:56:50 | Epoch: 1772924210 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:56:55 | Epoch: 1772924215 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 16:57:00 | Epoch: 1772924220 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 16:57:05 | Epoch: 1772924225 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 16:57:10 | Epoch: 1772924230 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:57:15 | Epoch: 1772924235 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 16:57:20 | Epoch: 1772924240 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:57:25 | Epoch: 1772924245 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 16:57:30 | Epoch: 1772924250 | Chan: 0 | Freq: 914.550 MHz
+[TOD Hop] 16:57:35 | Epoch: 1772924255 | Chan: 1 | Freq: 914.700 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 17:07:30 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:07:32 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+[TOD Hop] 17:07:35 | Epoch: 1772924855 | Chan: 1 | Freq: 914.700 MHz
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+[TOD Hop] 17:07:40 | Epoch: 1772924860 | Chan: 0 | Freq: 914.550 MHz
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+[TOD Hop] 17:07:45 | Epoch: 1772924865 | Chan: 3 | Freq: 915.000 MHz
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+[TOD Hop] 17:07:50 | Epoch: 1772924870 | Chan: 0 | Freq: 914.550 MHz
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+Decode Error: cannot reshape array of size 120 into shape (3,32)
+
+--- [MISSION OBSERVER START: Sat Mar  7 17:09:00 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:09:01 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01162168
+[91m[CRC FAIL][0m ID: 033 | LEN: 104 | CONF: 0.76
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101ef96
+[91m[CRC FAIL][0m ID: 239 | LEN: 150 | CONF: 0.80
+[TOD Hop] 17:09:05 | Epoch: 1772924945 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101003c
+[91m[CRC FAIL][0m ID: 000 | LEN: 60 | CONF: 0.81
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010121ec
+[91m[CRC FAIL][0m ID: 033 | LEN: 236 | CONF: 0.79
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010098
+[91m[CRC FAIL][0m ID: 000 | LEN: 152 | CONF: 0.82
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010100df
+[TOD Hop] 17:09:10 | Epoch: 1772924950 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 223 | CONF: 0.83
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.87
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101ce9a
+[91m[CRC FAIL][0m ID: 206 | LEN: 154 | CONF: 0.76
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.88
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01012152
+[91m[CRC FAIL][0m ID: 033 | LEN: 82 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0131efee
+[91m[CRC FAIL][0m ID: 239 | LEN: 238 | CONF: 0.80
+[TOD Hop] 17:09:15 | Epoch: 1772924955 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.88
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101775e
+[91m[CRC FAIL][0m ID: 119 | LEN: 94 | CONF: 0.71
+[DEBUG] Chain: Raw=85736481 | White=020a0000 | Final=0201005e
+[91m[CRC FAIL][0m ID: 000 | LEN: 94 | CONF: 0.80
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010163df
+[91m[CRC FAIL][0m ID: 099 | LEN: 223 | CONF: 0.76
+[TOD Hop] 17:09:20 | Epoch: 1772924960 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010013
+[91m[CRC FAIL][0m ID: 000 | LEN: 19 | CONF: 0.79
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010142d1
+[91m[CRC FAIL][0m ID: 066 | LEN: 209 | CONF: 0.77
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101ef59
+[TOD Hop] 17:09:25 | Epoch: 1772924965 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 239 | LEN: 89 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010121d3
+[91m[CRC FAIL][0m ID: 033 | LEN: 211 | CONF: 0.77
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.89
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101add4
+[91m[CRC FAIL][0m ID: 173 | LEN: 212 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010088
+[TOD Hop] 17:09:30 | Epoch: 1772924970 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 136 | CONF: 0.83
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010163aa
+[91m[CRC FAIL][0m ID: 099 | LEN: 170 | CONF: 0.76
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010100d4
+[91m[CRC FAIL][0m ID: 000 | LEN: 212 | CONF: 0.82
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101ce3a
+[91m[CRC FAIL][0m ID: 206 | LEN: 58 | CONF: 0.77
+[TOD Hop] 17:09:35 | Epoch: 1772924975 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101003a
+[91m[CRC FAIL][0m ID: 000 | LEN: 58 | CONF: 0.83
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010100b6
+[91m[CRC FAIL][0m ID: 000 | LEN: 182 | CONF: 0.79
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01016308
+[91m[CRC FAIL][0m ID: 099 | LEN: 8 | CONF: 0.76
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101ef88
+[91m[CRC FAIL][0m ID: 239 | LEN: 136 | CONF: 0.78
+[TOD Hop] 17:09:40 | Epoch: 1772924980 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101ef42
+[91m[CRC FAIL][0m ID: 239 | LEN: 66 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01010010
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.88
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01012135
+[91m[CRC FAIL][0m ID: 033 | LEN: 53 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010121c7
+[TOD Hop] 17:09:45 | Epoch: 1772924985 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 033 | LEN: 199 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=0101effe
+[91m[CRC FAIL][0m ID: 239 | LEN: 254 | CONF: 0.78
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=01012130
+[91m[CRC FAIL][0m ID: 033 | LEN: 48 | CONF: 0.77
+[DEBUG] Chain: Raw=86736481 | White=010a0000 | Final=010142db
+[TOD Hop] 17:09:50 | Epoch: 1772924990 | Chan: 4 | Freq: 915.150 MHz
+[91m[CRC FAIL][0m ID: 066 | LEN: 219 | CONF: 0.77
+
+--- [MISSION OBSERVER START: Sat Mar  7 17:13:01 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:13:02 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[91m[CRC FAIL][0m ID: 008 | LEN: 8 | CONF: 0.80
+[TOD Hop] 17:13:05 | Epoch: 1772925185 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[TOD Hop] 17:13:10 | Epoch: 1772925190 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 010 | LEN: 16 | CONF: 0.85
+[TOD Hop] 17:13:15 | Epoch: 1772925195 | Chan: 3 | Freq: 915.000 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.91
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[91m[CRC FAIL][0m ID: 000 | LEN: 36 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 002 | LEN: 36 | CONF: 0.85
+[TOD Hop] 17:13:20 | Epoch: 1772925200 | Chan: 5 | Freq: 915.300 MHz
+[91m[CRC FAIL][0m ID: 004 | LEN: 36 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 005 | LEN: 36 | CONF: 0.86
+[91m[CRC FAIL][0m ID: 006 | LEN: 36 | CONF: 0.84
+[91m[CRC FAIL][0m ID: 007 | LEN: 36 | CONF: 0.85
+[TOD Hop] 17:13:25 | Epoch: 1772925205 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 008 | LEN: 36 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 009 | LEN: 36 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 010 | LEN: 36 | CONF: 0.85
+[91m[CRC FAIL][0m ID: 011 | LEN: 35 | CONF: 0.85
+[TOD Hop] 17:13:30 | Epoch: 1772925210 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:13:35 | Epoch: 1772925215 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 020 | LEN: 36 | CONF: 0.89
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.77
+[TOD Hop] 17:13:40 | Epoch: 1772925220 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[91m[CRC FAIL][0m ID: 000 | LEN: 27 | CONF: 0.76
+[TOD Hop] 17:13:45 | Epoch: 1772925225 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:13:50 | Epoch: 1772925230 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.73
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.89
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[TOD Hop] 17:13:55 | Epoch: 1772925235 | Chan: 1 | Freq: 914.700 MHz
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.72
+[TOD Hop] 17:14:00 | Epoch: 1772925240 | Chan: 1 | Freq: 914.700 MHz
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.92
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[TOD Hop] 17:14:05 | Epoch: 1772925245 | Chan: 2 | Freq: 914.850 MHz
+[91m[CRC FAIL][0m ID: 050 | LEN: 36 | CONF: 0.91
+[TOD Hop] 17:14:10 | Epoch: 1772925250 | Chan: 3 | Freq: 915.000 MHz
+[TOD Hop] 17:14:15 | Epoch: 1772925255 | Chan: 3 | Freq: 915.000 MHz
+[91m[CRC FAIL][0m ID: 059 | LEN: 36 | CONF: 0.89
+[TOD Hop] 17:14:20 | Epoch: 1772925260 | Chan: 4 | Freq: 915.150 MHz
+[TOD Hop] 17:14:25 | Epoch: 1772925265 | Chan: 4 | Freq: 915.150 MHz
+
+--- [MISSION OBSERVER START: Sat Mar  7 17:18:13 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:18:14 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 17:18:15 | Epoch: 1772925495 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.72
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[TOD Hop] 17:18:20 | Epoch: 1772925500 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=1 type=5 seq=0 plen=3
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[TOD Hop] 17:18:25 | Epoch: 1772925505 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[TOD Hop] 17:18:30 | Epoch: 1772925510 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.98
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=0 seq=0 plen=36
+[DEBUG] Recovered: sid=1 type=0 seq=1 plen=36
+[91m[CRC FAIL][0m ID: 001 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=2 plen=36
+[91m[CRC FAIL][0m ID: 002 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=3 plen=36
+[91m[CRC FAIL][0m ID: 003 | LEN: 36 | CONF: 0.88
+[TOD Hop] 17:18:35 | Epoch: 1772925515 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=4 plen=36
+[DEBUG] Recovered: sid=1 type=0 seq=5 plen=36
+[91m[CRC FAIL][0m ID: 005 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=6 plen=36
+[91m[CRC FAIL][0m ID: 006 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=7 plen=36
+[91m[CRC FAIL][0m ID: 007 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[TOD Hop] 17:18:40 | Epoch: 1772925520 | Chan: 2 | Freq: 914.850 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=9 plen=36
+[91m[CRC FAIL][0m ID: 009 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=10 plen=36
+[91m[CRC FAIL][0m ID: 010 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=11 plen=36
+[91m[CRC FAIL][0m ID: 011 | LEN: 36 | CONF: 0.88
+[DEBUG] Recovered: sid=1 type=0 seq=12 plen=36
+[91m[CRC FAIL][0m ID: 012 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=13 plen=36
+[91m[CRC FAIL][0m ID: 013 | LEN: 36 | CONF: 0.87
+[TOD Hop] 17:18:45 | Epoch: 1772925525 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=14 plen=36
+[91m[CRC FAIL][0m ID: 014 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=15 plen=36
+[91m[CRC FAIL][0m ID: 015 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=16 plen=36
+[91m[CRC FAIL][0m ID: 016 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=17 plen=36
+[91m[CRC FAIL][0m ID: 017 | LEN: 36 | CONF: 0.87
+[TOD Hop] 17:18:50 | Epoch: 1772925530 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=18 plen=36
+[91m[CRC FAIL][0m ID: 018 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=19 plen=36
+[91m[CRC FAIL][0m ID: 019 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=20 plen=36
+[91m[CRC FAIL][0m ID: 020 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=21 plen=36
+[91m[CRC FAIL][0m ID: 021 | LEN: 36 | CONF: 0.87
+[DEBUG] Recovered: sid=1 type=0 seq=22 plen=36
+[91m[CRC FAIL][0m ID: 022 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:18:55 | Epoch: 1772925535 | Chan: 4 | Freq: 915.150 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=23 plen=36
+[91m[CRC FAIL][0m ID: 023 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=24 plen=36
+[91m[CRC FAIL][0m ID: 024 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=25 plen=36
+[91m[CRC FAIL][0m ID: 025 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=26 plen=36
+[91m[CRC FAIL][0m ID: 026 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=27 plen=36
+[91m[CRC FAIL][0m ID: 027 | LEN: 36 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=28 plen=36
+[91m[CRC FAIL][0m ID: 028 | LEN: 36 | CONF: 0.86
+[TOD Hop] 17:19:00 | Epoch: 1772925540 | Chan: 3 | Freq: 915.000 MHz
+[DEBUG] Recovered: sid=1 type=0 seq=29 plen=36
+[91m[CRC FAIL][0m ID: 029 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=30 plen=36
+[91m[CRC FAIL][0m ID: 030 | LEN: 36 | CONF: 0.88
+
+--- [MISSION OBSERVER START: Sat Mar  7 17:21:49 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:22:01 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+
+--- [MISSION OBSERVER START: Sat Mar  7 17:22:03 2026] ---
+--- [OPAL VANGUARD] LEVEL_6_LINK16 ONLINE ---
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TERMINAL] USRP Clock Synced to: Sat Mar  7 17:22:05 2026
+[TERMINAL] COMSEC (AES-CTR) ENABLED
+[TOD Hop] 17:22:05 | Epoch: 1772925725 | Chan: 0 | Freq: 914.550 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=231 seq=121 plen=24
+[91m[CRC FAIL][0m ID: 121 | LEN: 24 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Recovered: sid=1 type=2 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[DEBUG] Recovered: sid=2 type=5 seq=0 plen=3
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.83
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.88
+[TOD Hop] 17:22:10 | Epoch: 1772925730 | Chan: 5 | Freq: 915.300 MHz
+[TOD Hop] 17:22:10 | Epoch: 1772925730 | Chan: 5 | Freq: 915.300 MHz
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.84
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[92m[OK][0m ID: 000 | TYPE: SYN | RX: b'\n\xce' | CONF: 0.89
+[96m[MAC] Handshake SYN Received. Seed: 0x0ACE[0m
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=1 seq=0 plen=16
+[91m[CRC FAIL][0m ID: 000 | LEN: 16 | CONF: 0.86
+[DEBUG] Recovered: sid=1 type=0 seq=0 plen=36
+[92m[OK][0m ID: 000 | TYPE: DATA | RX: b'HEARTBEAT FROM ALPHA' | CONF: 0.90
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=2 seq=0 plen=3
+[91m[CRC FAIL][0m ID: 000 | LEN: 3 | CONF: 0.70
+[DEBUG] Recovered: sid=2 type=241 seq=8 plen=8
+[91m[CRC FAIL][0m ID: 008 | LEN: 8 | CONF: 0.82
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:22:15 | Epoch: 1772925735 | Chan: 2 | Freq: 914.850 MHz
+[TOD Hop] 17:22:15 | Epoch: 1772925735 | Chan: 2 | Freq: 914.850 MHz
+[41m[AMC] LINK QUALITY CRITICAL. REQUESTING PHY FALLBACK.[0m
+[DEBUG] Recovered: sid=1 type=0 seq=3 plen=36
+[91m[CRC FAIL][0m ID: 003 | LEN: 36 | CONF: 0.82
+[DEBUG] Recovered: sid=1 type=5 seq=0 plen=3
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=0 seq=5 plen=36
+[91m[CRC FAIL][0m ID: 005 | LEN: 36 | CONF: 0.81
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=0 seq=184 plen=51
+[91m[CRC FAIL][0m ID: 184 | LEN: 51 | CONF: 0.84
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[TOD Hop] 17:22:20 | Epoch: 1772925740 | Chan: 1 | Freq: 914.700 MHz
+[TOD Hop] 17:22:20 | Epoch: 1772925740 | Chan: 1 | Freq: 914.700 MHz
+[DEBUG] Recovered: sid=1 type=49 seq=176 plen=7
+[91m[CRC FAIL][0m ID: 176 | LEN: 7 | CONF: 0.80
+[DEBUG] Recovered: sid=2 type=1 seq=0 plen=16
+[DEBUG] Recovered: sid=1 type=0 seq=9 plen=36
+[91m[CRC FAIL][0m ID: 009 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=153 plen=36
+[91m[CRC FAIL][0m ID: 153 | LEN: 36 | CONF: 0.85
+[DEBUG] Recovered: sid=1 type=0 seq=10 plen=36
+[91m[CRC FAIL][0m ID: 010 | LEN: 36 | CONF: 0.82
+[DEBUG] Recovered: sid=1 type=0 seq=10 plen=36
+[91m[CRC FAIL][0m ID: 010 | LEN: 36 | CONF: 0.83
+[DEBUG] Recovered: sid=1 type=127 seq=11 plen=36
+[91m[CRC FAIL][0m ID: 011 | LEN: 36 | CONF: 0.83

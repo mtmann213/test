@@ -2,14 +2,14 @@
 marp: true
 theme: default
 paginate: true
-header: "Disciplined AI Integration: Mike's Vignette"
-footer: "Unclassified // FOUO (Sample)"
+header: "Disciplined AI Integration"
+footer: "Unclassified"
 ---
 
 # Disciplined AI Integration: From Chatbots to RF Engineering
-### Practical Vignettes & Mental Models for the Wing
+### Practical Vignettes & Mental Models
 
-**Presenter:** Mike (AI/ML Use Case Lead)
+**Presenter:** 
 **Date:** March 2026
 
 ---
@@ -43,7 +43,7 @@ footer: "Unclassified // FOUO (Sample)"
 
 * **The Desk Analogy:** 
     - Small Desk = AI forgets the start of the file.
-    - Large Desk = AI holds the entire Project Opal Vanguard codebase.
+    - Large Desk = AI holds the entire project codebase.
 * **Mission Impact:** 
     - Once the desk is full, the oldest data "falls off."
     - **Disciplined Workflow:** Keeping the "desk" organized (Clean Context).
@@ -67,7 +67,7 @@ footer: "Unclassified // FOUO (Sample)"
 2. **Fine-Tuning:** Sending a graduate to flight school (Specialized expertise).
 3. **RAG / In-Context Learning:** Giving an expert a **Technical Manual** to look at while they work.
 
-* **Crucial Point:** Most Wing use cases utilize **Tier 3 (RAG)**—giving AI mission data in real-time.
+* **Crucial Point:** Use cases utilize **Tier 3 (RAG)**—giving AI mission data in real-time.
 
 ---
 
@@ -89,7 +89,7 @@ footer: "Unclassified // FOUO (Sample)"
 * **Dual-Pilot Cockpit:**
     - **Gemini (The Architect):** Plans DF-OFDM structures & high-level DSP logic.
     - **Codex (The Mechanic):** Handles gritty syntax & fast autocompletion.
-* **Result:** **3x faster development** on Project Opal Vanguard compared to manual coding.
+* **Result:** **3x faster development** compared to manual coding.
 
 ---
 
@@ -97,39 +97,52 @@ footer: "Unclassified // FOUO (Sample)"
 
 # Cloud vs. Local (Ollama & VRAM)
 
-* **Cloud:** High reasoning, massive scale, fast (but data leaves the wire).
+* **Cloud:** High reasoning, massive scale, fast (but data leaves the workspace).
 * **Local (Ollama):** Privacy, **Data Sovereignty**, Air-Gapped utility.
 * **VRAM:** The "Engine Displacement" of AI.
     - More VRAM = Smarter local models.
-    - **Use Case:** Local classification of sensitive signals.
+    - **Use Case:** Local classification of sensitive projects.
 
 ---
 
 <!-- _header: "Phase 4: The Vignette - Project Opal Vanguard" -->
 
-# The Challenge: Custom DF-OFDM
+# The Evolution: Tactical SDR to Neural Receiver
 
-* **Problem:** Manual classification of frequency-hopping signals is slow and error-prone.
-* **Signal Spec:** 120-byte stability frames, 500ms hopping.
-* **RF Friction:** Phase-inversion and timing synchronization issues.
+* **The Challenge:** Transitioning from fragile GRC-only designs to a **Resilient Tactical Transceiver**.
+* **Key Specs:** 
+    - **Waveforms:** GFSK, DQPSK, CCSK, and **Level 9: Deep Shadow (CSS)**.
+    - **Timing:** 120-byte tactical blocks with 15-row matrix interleaving.
+    - **Hardening:** AES-CTR crypto-sync, Reed-Solomon FEC, and NRZ-I phase resilience.
+* **The Physics Bottleneck:** USRP "Tag Paradox" and CFO-induced "Donut" constellations.
 
 ---
 
-# The AI Solution: Neural Receivers
+# The AI Solution: Breaking the Bottleneck
 
-* Leveraging **Neural Receivers** via TensorFlow/Sionna.
-* **AI-Assisted Code Gen:**
-    - Gemini CLI generated the C++ correlators.
-    - Software-Defined Timing Scanner for automatic FFT alignment.
-* **Pattern Matching:** AI identifies signals in nanoseconds, not minutes.
+* **Surgical Logic (Gemini CLI Assisted):**
+    - **Super-Vectorization:** Replaced thousands of Python loops with **NumPy Matrix Operations** (90% CPU reduction).
+    - **FFT-Lock Frequency Estimation:** Transformed "Donuts" into "Blobs" by locking onto the 50kHz pilot spectrum.
+    - **Threaded Offload:** Decoupled syncword search from heavy RS-FEC/CCSK math for fluid 2.0 Msps operation.
+
+---
+
+# Vanguard Data Factory (VDF) & Specter's Edge
+
+* **The "Hardware Trinity":** Automated 3x USRP array (TX, RX, Adversary) for industrial-scale data harvesting.
+* **Mission: Specter's Edge:** 
+    - **The Mega-Harvest:** 250,000+ snapshots of "dirty" real-world hardware data.
+    - **Diversity:** Sweeping 24 Classes x 4 Gains x 3 Drift levels x 3 Offsets.
+* **Result:** A model trained on the "Reality of the Wire," not just idealized simulations.
 
 ---
 
 # Impact & Results
 
-* **Level 7 OFDM Master Achieved.**
-* **Speed to Mission:** Time-to-classification reduced from **weeks to days**.
-* **Reproducibility:** The entire workflow is automated and sharable across the Wing.
+* **Level 9 "Deep Shadow" Realized:** Ultra-resilient Chirp Spread Spectrum (CSS) operational.
+* **Speed to Mission:** Dataset generation and model refinement reduced from **months to hours**.
+* **Stability:** 100% bit-perfect logic verified via 18-point regression suite.
+* **Success:** Level 7 OFDM Master and Level 9 CSS Master status achieved.
 
 ---
 

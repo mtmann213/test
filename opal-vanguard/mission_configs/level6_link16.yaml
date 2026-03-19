@@ -1,0 +1,59 @@
+# Opal Vanguard Mission Configuration: LEVEL 6 (Link-16)
+# Objective: Authentic Military Waveform (MSK) + CCSK Spreading.
+# Note: Dwell time reverted to 500ms for initial modulation stability.
+
+mission:
+  id: "LEVEL_6_LINK16"
+
+physical:
+  modulation: "MSK" # UPGRADED: Authentic Link-16 Modulation
+  samp_rate: 2000000
+  center_freq: 915000000
+  samples_per_symbol: 10
+  freq_dev: 50000 # Standard for MSK at 200kbps (bit_rate/4)
+  ghost_mode: true
+  pulse_duration_us: 7.2 # Authentic Link-16 Pulse (Logic Placeholder)
+
+link_layer:
+  frame_size: 120
+  use_fec: true
+  fec_type: "RS3115" # Authentic Link-16 FEC
+  use_interleaving: true
+  interleaver_rows: 15
+  use_whitening: true
+  use_nrzi: true
+  use_comsec: true
+  comsec_key: "5365637265744f70616c4b6579313233"
+  crc_type: "CRC16"
+
+mac_layer:
+  amc_enabled: true
+  arq_enabled: true
+  max_retries: 5
+  afh_enabled: true
+  slot_duration_ms: 7.8125 # Authentic Link-16 TDMA Slot (Logic Placeholder)
+
+dsss:
+  enabled: true
+  type: "CCSK" # Authentic Link-16 Spreading
+  spreading_factor: 32
+
+hopping:
+  enabled: true
+  type: "AES"
+  sync_mode: "TOD"
+  dwell_time_ms: 100 # UPGRADED: 10 Hops/sec
+  aes_key: "5365637265744f70616c4b6579313233"
+  num_channels: 10 # Reduced for higher hit-probability in inspectrum
+  channel_spacing: 150000
+  jitter_enabled: false # Future Hardening: Time-Jittered transmission
+
+hardware:
+  args: "type=b200"
+  tx_gain: 70
+  rx_gain: 70
+  tx_antenna: "TX/RX"
+  rx_antenna: "TX/RX"
+
+application_layer:
+  payload_type: "heartbeat"
