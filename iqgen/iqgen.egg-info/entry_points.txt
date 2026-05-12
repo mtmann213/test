@@ -1,0 +1,2 @@
+[console_scripts]
+iqgen = iqgen.__main__:main

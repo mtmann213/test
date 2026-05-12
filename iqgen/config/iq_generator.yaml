@@ -1,0 +1,130 @@
+# =============================================================
+# IQ Signal Generator Configuration
+# =============================================================
+#
+# Signal Parameters:
+#   name: signal identifier (used in output filenames)
+#   center_frequency_hz: center frequency in Hz
+#   sample_rate: sample rate in Hz (e.g., 1e6 = 1 MHz)
+#   peak_power: output power normalization factor (default: 1.0)
+#   output_dir: directory for output files
+#   timestamp: add timestamp to filename (true/false)
+#   timestamp_format: strftime format for timestamp string
+#
+# Data Source (choose one by setting source):
+#   source: "random" | "file" | "bitstring" | "config"
+#   bit_count: number of bits for random/config mode (e.g., 10000)
+#   duration_sec: generate bits for this duration (overrides bit_count)
+#                total_bits = duration_sec * bitrate
+#   payload_bytes: read this many bytes from file (for "file" source)
+#   input_file: path to binary file (for "file" source)
+#   bit_order: "lsb_first" | "msb_first" (applies to file input)
+#
+# Modulation (all use Gray coding by default):
+#   bpsk - Binary PSK (1 bit/symbol)
+#   dbpsk - Differential BPSK
+#   qpsk - Quadrature PSK (2 bits/symbol)
+#   dqpsk - Differential QPSK
+#   pi4_qpsk - Pi/4 QPSK (rotates 45 deg between symbol pairs)
+#   oqpsk - Offset QPSK (Q channel delayed half symbol)
+#   8psk - 8-PSK (3 bits/symbol)
+#   d8psk - Differential 8PSK
+#   pi4_8psk - Pi/4 8PSK
+#
+# Rate Configuration (INTERCONNECTED):
+#   bitrate: bits per second (SOURCE OF TRUTH)
+#   symbol_rate: CALCULATED as bitrate / bits_per_symbol
+#   samples_per_symbol: CALCULATED as sample_rate / symbol_rate
+#   If symbol_rate or samples_per_symbol is set manually, a warning is logged
+#   about the override. samples_per_symbol is always rounded to nearest int.
+#
+# Pulse Shaping (INTERCONNECTED with samples_per_symbol):
+#   filter_type: "none" | "root_raised_cosine" | "raised_cosine"
+#                | "gaussian" | "rectangular"
+#   span_symbols: filter span in symbols (default: 10)
+#   roll_off: excess bandwidth for RRC/RC (default: 0.35)
+#   bt_product: bandwidth-time product for Gaussian (default: 0.35)
+#   num_taps: CALCULATED as span_symbols * samples_per_symbol + 1
+#
+# Output Format:
+#   format: "cf32" | "sigmf"
+#   cf32: raw complex32 binary file
+#   sigmf: SigMF standard with .sigmf-data + .sigmf-meta files
+#
+# SigMF standard metadata options (in annotations):
+#   core:version - SigMF format version (default: "1.0.0")
+#   core:sample_rate - samples per second
+#   core:frequency - center frequency in Hz
+#   core:datetime - ISO 8601 capture time
+#   core:hardware - name of generating hardware
+#   core:description - human-readable description
+#   core:author - person/organization who created the record
+#   core:license - license for the data
+#   core:version - version tag
+#   core:comment - additional comments
+#   core:data_type - data type (default: "cf32_le")
+#   core:num_channels - number of channels
+#   core:geo_reference - georeferencing reference
+#   core:location - WGS84 lat/lon/alt
+#   core:metric - measurement metric
+#   core:meta_doi - DOI for metadata
+#   core:recording_doi - DOI for data
+#   core:triggers - trigger types
+#   core:header_bytes - header bytes before data
+#
+#   Annotation fields (per-annotation, not global):
+#   modulation - modulation type string
+#   bits_per_symbol - bits per symbol
+#   sample_rate - sample rate in Hz
+#   bitrate - bitrate in bits/sec
+#   samples_per_symbol - samples per symbol
+#   pulse_shaping - filter type string
+#   roll_off - roll-off factor (if RRC/RC)
+#   bt_product - BT product (if Gaussian)
+#   description - human-readable annotation description
+#
+# =============================================================
+
+iq_generator:
+  name: "test_qpsk_signal"
+
+  # RF parameters
+  center_frequency_hz: 2400000000  # 2.4 GHz
+  sample_rate: 1000000             # 1 Msps
+  peak_power: 1.0
+  output_dir: "./output"
+  timestamp: true
+  timestamp_format: "%Y%m%d_%H%M%S"
+
+  # Data source: "random" | "file" | "bitstring" | "config"
+  source: "random"
+  bit_count: 10000
+  # duration_sec: 1.0              # Overrides bit_count (total_bits = duration * bitrate)
+
+  # File source options (uncomment when source: "file"):
+  # input_file: "/path/to/binary/data.bin"
+  # payload_bytes: 1024
+  # bit_order: "lsb_first"         # "lsb_first" | "msb_first"
+
+  # Bitstring source (uncomment when source: "bitstring"):
+  # bitstring: "1010110011010101"
+
+  # Modulation: bpsk | dbpsk | qpsk | dqpsk | pi4_qpsk | oqpsk | 8psk | d8psk | pi4_8psk
+  modulation: "qpsk"
+  gray_coding: true
+  initial_phase: 0.0
+
+  # Rate (INTERCONNECTED - only set bitrate, others are calculated)
+  bitrate: 100000                  # 100 kbps (SOURCE OF TRUTH)
+  # symbol_rate: 50000             # Override with WARNING
+  # samples_per_symbol: 10         # Override with WARNING
+
+  # Pulse shaping (INTERCONNECTED with samples_per_symbol)
+  filter_type: "root_raised_cosine"
+  span_symbols: 10
+  roll_off: 0.35
+  bt_product: 0.35
+  # num_taps_override: 201           # Override (computed as span * sps + 1)
+
+  # Output format: cf32 | sigmf
+  format: "cf32"

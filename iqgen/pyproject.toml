@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iqgen"
+version = "0.1.0"
+description = "Generate IQ files in cf32 or SigMF format from YAML configuration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "pyyaml>=6.0",
+    "scipy>=1.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+iqgen = "iqgen.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["iqgen*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
