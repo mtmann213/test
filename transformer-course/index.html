@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How LLMs Actually Work — Interactive Course</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: #2a2a3a;
+    --text: #e4e4ef;
+    --text-dim: #8888a0;
+    --accent: #7c6aef;
+    --accent-glow: rgba(124, 106, 239, 0.15);
+    --green: #34d399;
+    --orange: #fbbf24;
+    --red: #f87171;
+    --cyan: #22d3ee;
+    --pink: #f472b6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  #sidebar {
+    width: 280px;
+    min-width: 280px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    z-index: 100;
+    transition: transform 0.3s ease;
+  }
+
+  #sidebar h2 {
+    font-size: 14px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--text-dim); padding: 0 24px; margin-bottom: 8px;
+  }
+
+  #sidebar .logo {
+    font-size: 16px; font-weight: 700; padding: 0 24px;
+    margin-bottom: 32px; color: var(--accent);
+  }
+
+  .nav-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 24px; cursor: pointer; transition: all 0.15s ease;
+    font-size: 13px; color: var(--text-dim); border-left: 3px solid transparent;
+  }
+
+  .nav-item:hover { background: var(--surface2); color: var(--text); }
+  .nav-item.active {
+    background: var(--accent-glow); color: var(--accent); border-left-color: var(--accent);
+  }
+  .nav-item.completed::after {
+    content: '✓'; margin-left: auto; color: var(--green); font-size: 14px;
+  }
+
+  .nav-num {
+    width: 24px; height: 24px; border-radius: 6px; background: var(--surface2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-num { background: var(--accent); color: #fff; }
+
+  #progress-wrap {
+    margin-top: auto; padding: 24px; border-top: 1px solid var(--border);
+  }
+  #progress-wrap label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+  #progress-bar-bg { height: 4px; background: var(--surface2); border-radius: 2px; margin-top: 8px; overflow: hidden; }
+  #progress-bar-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.4s ease; width: 0%; }
+
+  #main {
+    margin-left: 280px; flex: 1; padding: 48px 64px; max-width: 960px;
+  }
+
+  .module { display: none; animation: fadeIn 0.3s ease; }
+  .module.active { display: block; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .module h1 { font-size: 28px; margin-bottom: 4px; }
+  .module .subtitle { color: var(--text-dim); font-size: 15px; margin-bottom: 32px; }
+
+  .concept {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 24px; margin-bottom: 24px; line-height: 1.7; font-size: 15px;
+  }
+
+  .concept p { margin-bottom: 12px; }
+  .concept p:last-child { margin-bottom: 0; }
+
+  code {
+    background: var(--surface2); padding: 2px 6px; border-radius: 4px;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; color: var(--cyan);
+  }
+
+  .explainer {
+    background: rgba(52, 211, 153, 0.06); border-left: 3px solid var(--green);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px;
+  }
+  .explainer strong { color: var(--green); }
+
+  .demo-area {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 24px; margin-bottom: 24px;
+  }
+
+  .demo-area h3 { font-size: 15px; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .demo-area h3::before { content: '▶'; font-size: 10px; }
+
+  canvas { border-radius: 8px; display: block; width: 100%; background: var(--bg); }
+
+  .control-row { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+  .control-row label { font-size: 13px; color: var(--text-dim); min-width: 80px; }
+
+  input[type="text"], textarea, select {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 14px; color: var(--text); font-size: 14px; flex: 1; outline: none; transition: border-color 0.2s;
+  }
+  input[type="text"]:focus, textarea:focus { border-color: var(--accent); }
+
+  button {
+    background: var(--accent); color: #fff; border: none; padding: 8px 16px;
+    border-radius: 8px; font-size: 13px; cursor: pointer; transition: opacity 0.2s, transform 0.1s;
+  }
+  button:hover { opacity: 0.9; }
+  button:active { transform: scale(0.97); }
+  button.secondary { background: var(--surface2); color: var(--text-dim); border: 1px solid var(--border); }
+
+  .token-display { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 16px; min-height: 40px; align-items: center; }
+  .token-chip {
+    padding: 6px 12px; border-radius: 6px; font-size: 13px;
+    font-family: 'JetBrains Mono', monospace; cursor: default; position: relative; transition: transform 0.15s;
+  }
+  .token-chip:hover { transform: scale(1.08); z-index: 2; }
+
+  .quiz-area {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 24px; margin-bottom: 24px;
+  }
+  .quiz-area h3 { font-size: 15px; color: var(--orange); margin-bottom: 16px; }
+
+  .quiz-option {
+    display: block; width: 100%; text-align: left; padding: 12px 16px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    margin-bottom: 8px; cursor: pointer; font-size: 14px; color: var(--text); transition: all 0.2s;
+  }
+  .quiz-option:hover { border-color: var(--accent); background: var(--surface2); }
+  .quiz-option.correct { border-color: var(--green); background: rgba(52, 211, 153, 0.1); color: var(--green); }
+  .quiz-option.wrong { border-color: var(--red); background: rgba(248, 113, 113, 0.1); color: var(--red); }
+
+  .quiz-feedback { margin-top: 12px; font-size: 14px; padding: 12px; border-radius: 8px; display: none; }
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.correct-fb { background: rgba(52, 211, 153, 0.08); color: var(--green); }
+  .quiz-feedback.wrong-fb { background: rgba(248, 113, 113, 0.08); color: var(--red); }
+
+  .complete-btn-wrap { text-align: center; margin-top: 32px; padding-bottom: 64px; }
+  #complete-btn { font-size: 15px; padding: 12px 32px; border-radius: 10px; }
+
+  #menu-toggle {
+    display: none; position: fixed; top: 16px; left: 16px; z-index: 200;
+    background: var(--surface); border: 1px solid var(--border); color: var(--text);
+    width: 40px; height: 40px; border-radius: 8px; font-size: 20px; cursor: pointer;
+    align-items: center; justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    #menu-toggle { display: flex; }
+    #sidebar { transform: translateX(-100%); }
+    #sidebar.open { transform: translateX(0); }
+    #main { margin-left: 0; padding: 48px 24px; padding-top: 72px; max-width: 100%; }
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none; appearance: none; height: 6px; background: var(--surface2);
+    border-radius: 3px; outline: none; flex: 1; max-width: 200px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--accent); cursor: pointer;
+  }
+
+  .slider-val { font-size: 13px; color: var(--cyan); min-width: 40px; text-align: right; font-family: monospace; }
+
+  .compare-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; }
+  .compare-table th, .compare-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  .compare-table th { color: var(--text-dim); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .compare-table td:first-child { color: var(--accent); font-weight: 500; }
+
+  select { background: var(--bg) !important; color: var(--text) !important; border: 1px solid var(--border) !important; padding: 8px !important; border-radius: 6px !important; flex: unset !important; min-width: 80px; }
+</style>
+</head>
+<body>
+
+<button id="menu-toggle">☰</button>
+
+<nav id="sidebar">
+  <div class="logo">🧠 Transformer Internals</div>
+  <h2>Modules</h2>
+  <div class="nav-item active" data-module="0"><span class="nav-num">1</span> Tokenization</div>
+  <div class="nav-item" data-module="1"><span class="nav-num">2</span> Embeddings</div>
+  <div class="nav-item" data-module="2"><span class="nav-num">3</span> Positional Encoding</div>
+  <div class="nav-item" data-module="3"><span class="nav-num">4</span> Attention</div>
+  <div class="nav-item" data-module="4"><span class="nav-num">5</span> Multi-Head Attention</div>
+  <div class="nav-item" data-module="5"><span class="nav-num">6</span> Feed-Forward Network</div>
+  <div class="nav-item" data-module="6"><span class="nav-num">7</span> Residual Stream</div>
+  <div class="nav-item" data-module="7"><span class="nav-num">8</span> Next-Token Prediction</div>
+  <div class="nav-item" data-module="8"><span class="nav-num">9</span> Architecture vs Weights</div>
+  <div id="progress-wrap">
+    <label>Progress</label>
+    <div id="progress-bar-bg"><div id="progress-bar-fill"></div></div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ===== MODULE 0: TOKENIZATION ===== -->
+<div class="module active" id="mod-0">
+  <h1>Tokenization</h1>
+  <p class="subtitle">How text becomes numbers — the first step every LLM takes</p>
+
+  <div class="concept">
+    <p>Models don't read text directly. They read <strong>integer IDs</strong>. The step that converts your prompt into a sequence of those integers is called <strong>tokenization</strong>.</p>
+    <p>A tokenizer takes a string and produces a sequence of integers, where each integer points to an entry in a fixed vocabulary. Modern LLM vocabularies usually contain tens of thousands to a few hundred thousand entries.</p>
+    <div class="explainer">
+      <strong>Tiny explainer: token ID</strong><br>
+      A token ID is the integer the model uses for one vocabulary entry. The model works with the number, not the written word itself.
+    </div>
+    <p>Tokens aren't usually whole words — they're <strong>subword pieces</strong>. "Tokenization" might split into ["token", "ization"]. "Running" becomes ["run", "ning"]. This is efficient: common pieces become single tokens, rare or novel words get composed from smaller pieces.</p>
+    <p>The classic example: ask an LLM how many R's are in "strawberry." Older models got it wrong. That's not the model failing at counting — it's the model not operating on letters directly, only token IDs that happen to spell out a word a human would split letter by letter.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Try It: Type Text and Watch Tokenization</h3>
+    <div class="control-row">
+      <input type="text" id="token-input" placeholder="Type something here..." value="The strawberry is running">
+    </div>
+    <div class="token-display" id="token-output"></div>
+    <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Hover each token to see its ID. This uses a simplified BPE-style tokenizer.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>The "Strawberry" Problem</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Type "strawberry" above and watch how many tokens it becomes. The model never sees individual letters — it sees token IDs.</p>
+    <div class="token-display" id="strawberry-demo"></div>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Why do LLMs sometimes struggle to count letters in words?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Because they're bad at math</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">Because they see token IDs, not individual letters</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Because their vocabulary is too small</button>
+    <div class="quiz-feedback" id="quiz-fb-0"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(0)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 1: EMBEDDINGS ===== -->
+<div class="module" id="mod-1">
+  <h1>Embeddings</h1>
+  <p class="subtitle">How numbers get meaning — the lookup table that gives tokens life</p>
+
+  <div class="concept">
+    <p>A token ID like <code>1024</code> is just a row index. It doesn't mean anything by itself. The thing that gives it meaning is a giant table called the <strong>embedding matrix</strong>.</p>
+    <p>Every model has one. It has one row per vocabulary entry, and each row is a long vector of numbers — typically 4,096 dimensions for a 7B-class model.</p>
+    <div class="explainer">
+      <strong>Tiny explainer: embedding matrix</strong><br>
+      The embedding matrix is a lookup table. Token ID in, learned vector out. Each row is the model's representation of what that token "means."
+    </div>
+    <p>The interesting property: semantically similar tokens end up with similar vectors. "King" is close to "queen," "Paris" is close to "France." None of this is hard-coded — it emerges from training on enough text.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Embedding Space Visualization</h3>
+    <canvas id="embedding-canvas" width="800" height="450"></canvas>
+    <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Click any point to see its nearest neighbors. Similar meanings cluster together.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Vector Arithmetic</h3>
+    <p style="font-size:14px;margin-bottom:12px;">The famous equation: king − man + woman ≈ queen</p>
+    <canvas id="arithmetic-canvas" width="800" height="350"></canvas>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Where does the semantic structure of embeddings come from?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">It's hand-designed by linguists</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">It emerges during training as the model learns to predict text</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">It's copied from a dictionary database</button>
+    <div class="quiz-feedback" id="quiz-fb-1"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(1)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 2: POSITIONAL ENCODING ===== -->
+<div class="module" id="mod-2">
+  <h1>Positional Encoding</h1>
+  <p class="subtitle">How the model knows what order tokens came in — without it, everything is a bag of words</p>
+
+  <div class="concept">
+    <p>The transformer's attention mechanism is <strong>permutation-invariant</strong>. If you shuffle the input tokens, the attention scores stay exactly the same. That means without extra information, "The cat chased the dog" and "The dog chased the cat" would look identical.</p>
+    <p><strong>Positional encodings</strong> solve this by adding position-specific vectors to each token's embedding. The most common approach uses sine and cosine waves of different frequencies — one per dimension.</p>
+    <div class="explainer">
+      <strong>Tiny explainer: why sines and cosines?</strong><br>
+      Sine/cosine positional encodings let the model learn to reason about relative positions. The encoding for position N+1 is a fixed function of the encoding for position N, regardless of what N is. This generalizes to sequences longer than anything seen during training.
+    </div>
+  </div>
+
+  <div class="demo-area">
+    <h3>Positional Encoding Waves</h3>
+    <canvas id="positional-canvas" width="800" height="400"></canvas>
+    <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Each colored line is one dimension of the positional encoding. Lower-frequency waves encode coarse position; higher-frequency waves encode fine-grained differences.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Scramble Test</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Watch what happens when we shuffle tokens. Without positional encoding, the model can't tell the difference.</p>
+    <div class="control-row">
+      <button onclick="scrambleDemo()">Scramble Tokens</button>
+      <button class="secondary" onclick="unscrambleDemo()">Restore Order</button>
+    </div>
+    <div class="token-display" id="positional-demo"></div>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">What happens if you remove positional encodings from a transformer?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">The model becomes faster but less accurate</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">The model can't distinguish token order — "cat chased dog" equals "dog chased cat"</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Nothing — attention handles ordering automatically</button>
+    <div class="quiz-feedback" id="quiz-fb-2"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(2)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 3: ATTENTION ===== -->
+<div class="module" id="mod-3">
+  <h1>Attention</h1>
+  <p class="subtitle">How tokens share information with each other — the core mechanism of transformers</p>
+
+  <div class="concept">
+    <p><strong>Self-attention</strong> is how every token in a sequence looks at every other token and decides: "how much should I pay attention to you?"</p>
+    <p>The math works like this: each token gets three vectors — a <strong>Query</strong> (what am I looking for?), a <strong>Key</strong> (what do I contain?), and a <strong>Value</strong> (what information can I share?). The query of one token is compared against the keys of all tokens. High scores mean "pay attention."</p>
+    <div class="explainer">
+      <strong>Tiny explainer: Q, K, V analogy</strong><br>
+      Think of it like a database lookup. Your Query is what you're searching for. Keys are the labels on file cabinets. Values are the contents inside. You compare your query to each key — the best matches tell you which files to read.
+    </div>
+    <p>The attention scores go through softmax (so they sum to 1), then weight the values. The result is a new representation for each token that incorporates information from all the tokens it attended to.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Attention Heatmap</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Watch how each token attends to others in "The cat sat on the mat"</p>
+    <canvas id="attention-canvas" width="800" height="500"></canvas>
+  </div>
+
+  <div class="demo-area">
+    <h3>Step-by-Step: Computing One Attention Score</h3>
+    <div class="control-row">
+      <label>Query token:</label>
+      <select id="attn-query"><option value="0">The</option><option value="1">cat</option><option value="2">sat</option></select>
+      <label>Key token:</label>
+      <select id="attn-key"><option value="0">The</option><option value="1">cat</option><option value="2">sat</option></select>
+      <button onclick="computeAttention()">Compute Score</button>
+    </div>
+    <canvas id="attn-step-canvas" width="800" height="300"></canvas>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">What does the attention score between two tokens represent?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">How similar their spellings are</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">How much information one token should pull from the other for its next representation</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Whether they appear near each other in the text</button>
+    <div class="quiz-feedback" id="quiz-fb-3"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(3)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 4: MULTI-HEAD ATTENTION ===== -->
+<div class="module" id="mod-4">
+  <h1>Multi-Head Attention</h1>
+  <p class="subtitle">How the model tracks many kinds of relationships at once — parallel conversations between tokens</p>
+
+  <div class="concept">
+    <p>A single attention head can only learn one kind of relationship. But language has many: syntax, semantics, coreference, negation, agreement...</p>
+    <p><strong>Multi-head attention</strong> runs multiple attention heads in parallel, each with its own Q/K/V projections. Each head learns to focus on different aspects:</p>
+    <ul style="margin-left:20px;margin-top:8px;line-height:1.8">
+      <li>One head might track subject-verb agreement</li>
+      <li>Another might link pronouns to their antecedents</li>
+      <li>Another might capture local word order (bigrams, trigrams)</li>
+    </ul>
+    <p>The outputs of all heads are concatenated and linearly projected. The model learns which head matters for what.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Multiple Attention Heads</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Each head highlights different relationships in "The dog that barked at the cat ran away"</p>
+    <canvas id="multihead-canvas" width="800" height="550"></canvas>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Why use multiple attention heads instead of one bigger head?</p>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">Each head can specialize in a different type of relationship, giving the model richer representations</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">It's faster to compute multiple small matrices than one big one</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Multiple heads reduce the total number of parameters needed</button>
+    <div class="quiz-feedback" id="quiz-fb-4"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(4)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 5: FEED-FORWARD NETWORK ===== -->
+<div class="module" id="mod-5">
+  <h1>Feed-Forward Network</h1>
+  <p class="subtitle">Where a large share of the model's stored knowledge lives — the transformer's thinking engine</p>
+
+  <div class="concept">
+    <p>After attention mixes information between tokens, each token passes through a <strong>feed-forward network (FFN)</strong>. This is a simple two-layer neural net applied independently to every position.</p>
+    <p>The FFN typically expands the representation (e.g., 4096 → 16384 dimensions), applies an activation function, then projects back down. It's where most of the model's parameters live — roughly 75% in many architectures.</p>
+    <div class="explainer">
+      <strong>Tiny explainer: why expand?</strong><br>
+      The expansion gives the network room to compute complex transformations. Think of it like having a bigger scratchpad — you can do more intermediate computation before compressing back down. Modern models use SwiGLU activation instead of simple ReLU for better quality.
+    </div>
+  </div>
+
+  <div class="demo-area">
+    <h3>FFN Signal Flow</h3>
+    <canvas id="ffn-canvas" width="800" height="400"></canvas>
+    <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Watch how a token's representation gets expanded, transformed, and compressed. Each FFN layer is the same for all positions but produces different outputs because each position has different input.</p>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Where do most transformer parameters live?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">In the attention mechanism (Q/K/V matrices)</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">In the feed-forward networks — roughly 75% of total parameters</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Evenly split between attention and FFN</button>
+    <div class="quiz-feedback" id="quiz-fb-5"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(5)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 6: RESIDUAL STREAM ===== -->
+<div class="module" id="mod-6">
+  <h1>Residual Stream & Layer Norm</h1>
+  <p class="subtitle">What makes deep stacks trainable — the information highway that prevents gradient death</p>
+
+  <div class="concept">
+    <p>Each transformer block takes an input, processes it through attention and FFN, then adds the result back to the original input. This is called a <strong>residual connection</strong> or skip connection.</p>
+    <p>The "residual stream" is the running sum that flows through all layers. Each layer doesn't replace the signal — it adds its contribution on top. This means information can flow from input to output without being transformed at every step.</p>
+    <div class="explainer">
+      <strong>Tiny explainer: why residual connections?</strong><br>
+      Without them, each layer would have to learn an identity transformation just to pass information through. With 30+ layers stacked, the gradients would vanish or explode during backpropagation. Residual connections create a direct highway for gradients to flow.
+    </div>
+    <p><strong>Layer normalization</strong> stabilizes training by normalizing each token's representation (zero mean, unit variance) before it enters attention and FFN. This prevents any single dimension from dominating.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>The Information Highway</h3>
+    <canvas id="residual-canvas" width="800" height="450"></canvas>
+    <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">The thick path is the residual stream. Each block adds its contribution but never fully replaces the signal.</p>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">What would happen if you removed residual connections from a deep transformer?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">It would run faster but produce the same results</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">Gradients would vanish or explode during training — deep networks couldn't learn effectively</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">The model would need more attention heads to compensate</button>
+    <div class="quiz-feedback" id="quiz-fb-6"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(6)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 7: NEXT-TOKEN PREDICTION ===== -->
+<div class="module" id="mod-7">
+  <h1>Next-Token Prediction</h1>
+  <p class="subtitle">What the model actually outputs — softmax, sampling, and the generation loop</p>
+
+  <div class="concept">
+    <p>The final layer produces a score for every token in the vocabulary. These scores go through <strong>softmax</strong> to become probabilities that sum to 1. The model then picks one token — either greedily (highest probability) or by sampling.</p>
+    <p><strong>Temperature</strong> controls how sharp or flat the distribution is:</p>
+    <ul style="margin-left:20px;margin-top:8px;line-height:1.8">
+      <li><code>temperature = 0</code>: always pick the most likely token (deterministic)</li>
+      <li><code>temperature = 1.0</code>: sample from the raw distribution</li>
+      <li><code>temperature > 1.0</code>: flatten the distribution — more creative, more random</li>
+    </ul>
+    <p><strong>Top-k sampling</strong> limits choices to the k most likely tokens. <strong>Top-p (nucleus) sampling</strong> keeps only tokens whose cumulative probability reaches p.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Temperature Playground</h3>
+    <div class="control-row">
+      <label>Temperature:</label>
+      <input type="range" id="temp-slider" min="0.1" max="2.0" step="0.1" value="1.0" oninput="updateDistribution()">
+      <span class="slider-val" id="temp-val">1.0</span>
+    </div>
+    <canvas id="dist-canvas" width="800" height="350"></canvas>
+    <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Watch how temperature reshapes the probability distribution. Click "Sample" to pick a token.</p>
+    <div class="control-row" style="margin-top:8px">
+      <button onclick="sampleToken()">🎲 Sample Token</button>
+      <span id="sample-result" style="font-size:14px;color:var(--green);"></span>
+    </div>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">What does increasing temperature do to the output distribution?</p>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Makes it more peaked — always picks the most likely token</button>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">Flattens it — makes less likely tokens more probable, increasing randomness and creativity</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Has no effect on the distribution shape</button>
+    <div class="quiz-feedback" id="quiz-fb-7"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(7)">Mark as Complete →</button>
+  </div>
+</div>
+
+<!-- ===== MODULE 8: ARCHITECTURE VS WEIGHTS ===== -->
+<div class="module" id="mod-8">
+  <h1>Architecture vs Weights</h1>
+  <p class="subtitle">What's broadly shared across modern LLMs, and what makes each one different</p>
+
+  <div class="concept">
+    <p>All modern LLMs share the same transformer-family skeleton. The differences come from:</p>
+    <ul style="margin-left:20px;margin-top:8px;line-height:1.8">
+      <li><strong>Architecture choices</strong>: activation functions, positional encoding type, attention variants</li>
+      <li><strong>Scale</strong>: number of parameters, context length, vocabulary size</li>
+      <li><strong>Training data</strong>: what the model was trained on shapes its knowledge and behavior</li>
+      <li><strong>Post-training</strong>: RLHF, DPO, constitutional AI — alignment techniques applied after pretraining</li>
+    </ul>
+    <p>The architecture is like a car's chassis. The weights are the engine tuned by millions of miles of driving data.</p>
+  </div>
+
+  <div class="demo-area">
+    <h3>Model Comparison</h3>
+    <table class="compare-table" id="compare-table">
+      <thead><tr><th>Feature</th><th>GPT-4</th><th>LLaMA 3</th><th>Mistral</th></tr></thead>
+      <tbody>
+        <tr><td>Positional Encoding</td><td>Rotary (RoPE)</td><td>Rotary (RoPE)</td><td>Rotary (RoPE)</td></tr>
+        <tr><td>Activation</td><td>GELU</td><td>SwiGLU</td><td>SwiGLU</td></tr>
+        <tr><td>Attention Variant</td><td>MHA → GQA</td><td>GQA</td><td>GQA + Sliding Window</td></tr>
+        <tr><td>Vocabulary Size</td><td>~100K</td><td>128K</td><td>32K</td></tr>
+        <tr><td>Normalization</td><td>RMSNorm</td><td>RMSNorm</td><td>RMSNorm</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="quiz-area">
+    <h3>Check Your Understanding</h3>
+    <p style="font-size:14px;margin-bottom:12px;">Two models with identical architecture but different training data would:</p>
+    <button class="quiz-option" data-correct="true" onclick="checkQuiz(this)">Behave differently — the weights encode all learned knowledge from their specific training data</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Produce nearly identical outputs since architecture determines behavior</button>
+    <button class="quiz-option" data-correct="false" onclick="checkQuiz(this)">Only differ in speed, not quality</button>
+    <div class="quiz-feedback" id="quiz-fb-8"></div>
+  </div>
+
+  <div class="complete-btn-wrap">
+    <button id="complete-btn" onclick="markComplete(8)">🎉 Complete Course →</button>
+  </div>
+</div>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
