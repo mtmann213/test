@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Hammerdin Endgame Farming Playbook</title>
+<style>
+:root{--bg:#0d0b0b;--panel:#171313;--line:#3a2b2b;--text:#eee7dc;--muted:#b9aa9a;--red:#c8463d;--red2:#812923;--gold:#d4ad62;--green:#7fc48b;--shadow:0 10px 30px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(129,41,35,.18),transparent 32rem),radial-gradient(circle at 100% 25%,rgba(212,173,98,.08),transparent 30rem),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:#f0c87b}.wrap{max-width:1440px;margin:auto;padding:0 22px 70px}header{margin:0 -22px 28px;padding:54px max(22px,calc((100vw - 1396px)/2)) 38px;background:linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,.1)),linear-gradient(180deg,#311514,#160e0e);border-bottom:1px solid #4a2b28;box-shadow:var(--shadow)}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:800}h1{font-family:Georgia,serif;font-size:clamp(2.2rem,5vw,4.7rem);line-height:.98;margin:.3rem 0 .8rem;color:#fff4df}.subtitle{max-width:850px;color:#d8c7b3;font-size:1.05rem}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.chip{border:1px solid #62413a;background:#251715;padding:5px 10px;border-radius:999px;color:#e8d5bd;font-size:.82rem}
+.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:24px}nav{position:sticky;top:14px;align-self:start;background:rgba(23,19,19,.92);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow);backdrop-filter:blur(8px)}nav strong{display:block;color:var(--gold);margin:3px 8px 9px}nav a{display:block;text-decoration:none;color:#d8cfc5;padding:7px 9px;border-radius:8px}nav a:hover{background:#2a1d1b;color:white}
+main{min-width:0}section{scroll-margin-top:18px;margin-bottom:24px}.card{background:linear-gradient(180deg,rgba(34,26,26,.95),rgba(23,19,19,.98));border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:var(--shadow)}.card+.card{margin-top:14px}h2{font:700 1.65rem/1.2 Georgia,serif;color:#f6dfb1;margin:0 0 14px}h3{font-size:1.04rem;color:#f1c977;margin:20px 0 8px}h4{margin:14px 0 5px;color:#ead8bd}p{margin:.5rem 0 1rem}.muted{color:var(--muted)}
+.callout{border-left:4px solid var(--red);background:#241817;padding:14px 16px;border-radius:0 10px 10px 0;margin:14px 0}.good{border-left-color:var(--green)}.gold{border-left-color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mini{background:#151111;border:1px solid #382828;border-radius:12px;padding:15px}.mini h3{margin-top:0}
+.priority{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #392929}.priority:last-child{border-bottom:0}.num{flex:0 0 31px;height:31px;border-radius:50%;display:grid;place-items:center;background:var(--red2);font-weight:800}.tag{display:inline-block;padding:2px 7px;border-radius:6px;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}.tag-now{background:#543019;color:#ffcc8c}.tag-keep{background:#173a25;color:#9fe0ab}.tag-long{background:#1d2f45;color:#9cc9ef}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:10px 0 4px;overflow:hidden}th,td{padding:10px 11px;border-bottom:1px solid #392b2b;vertical-align:top;text-align:left}th{background:#291c1b;color:#f3d39a;position:sticky;top:0}tr:last-child td{border-bottom:0}tbody tr:hover{background:#211818}.table-wrap{overflow:auto;border:1px solid #392b2b;border-radius:11px}
+ul,ol{padding-left:1.25rem}li{margin:.35rem 0}code,.rune{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#100d0d;border:1px solid #3d2d2c;border-radius:5px;padding:2px 5px;color:#f6c66f}
+.checklist label{display:flex;gap:9px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed #392929}.checklist label:last-child{border-bottom:0}input[type=checkbox]{accent-color:var(--red);width:17px;height:17px;margin-top:3px}input[type=number],input[type=search]{width:100%;background:#100d0d;color:var(--text);border:1px solid #503735;border-radius:8px;padding:9px 10px;font-size:1rem}.calc-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.result{margin-top:12px;background:#121010;border:1px solid #3d2e2e;border-radius:10px;padding:13px}.meter{height:8px;background:#0d0b0b;border-radius:999px;overflow:hidden;margin-top:7px}.meter span{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:999px}
+details{border:1px solid #392a29;border-radius:10px;background:#171212;margin:9px 0}summary{cursor:pointer;padding:12px 14px;color:#f1cf90;font-weight:750}details>div{padding:0 14px 13px}.searchbar{margin-bottom:10px}.route{display:grid;grid-template-columns:auto 1fr;gap:8px 13px;align-items:start}.route .arrow{color:var(--gold);font-weight:900}.success{color:#9bdaa4}.small{font-size:.86rem}footer{margin-top:28px;color:#a9998a;font-size:.84rem}.button{appearance:none;border:1px solid #69433d;background:#2d1a18;color:#f3dfc4;border-radius:8px;padding:8px 11px;cursor:pointer}.button:hover{background:#3a211e}
+@media(max-width:950px){.layout{grid-template-columns:1fr}nav{position:relative;top:auto;display:flex;gap:4px;overflow:auto}nav strong{display:none}nav a{white-space:nowrap}.grid3{grid-template-columns:1fr}}
+@media(max-width:700px){.grid,.calc-row{grid-template-columns:1fr}.wrap{padding-inline:12px}header{margin-inline:-12px;padding-inline:18px}.card{padding:16px}th,td{padding:9px}}
+@media print{body{background:white;color:#111}header,.card,nav,.mini{box-shadow:none}nav,.button{display:none}.layout{display:block}.card,.mini,details{background:white;border-color:#bbb}h1,h2,h3,h4,.eyebrow,.tag{color:#111}a{color:#111}details>div{display:block}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Diablo II: Resurrected · Personal Farming Guide</div>
+<h1>Hammerdin Endgame<br>Farming Playbook</h1>
+<div class="subtitle">Built for your level 81 online non-Ladder Paladin after defeating Hell Baal: dual Spirit, a +42 all-resistance Aerin Shield base, Skin of the Vipermagi, max Hell resistances, and an Act II Might/Insight mercenary.</div>
+<div class="chips"><span class="chip">Level 81</span><span class="chip">Hell cleared</span><span class="chip">Online non-Ladder</span><span class="chip">Hammerdin</span><span class="chip">Updated June 2026</span></div>
+</header>
+
+<div class="wrap"><div class="layout">
+<nav aria-label="Guide navigation">
+<strong>Quick navigation</strong>
+<a href="#start">Start here</a><a href="#snapshot">Build snapshot</a><a href="#routes">Where to farm</a><a href="#targets">Gear targets</a><a href="#bases">Bases & runewords</a><a href="#runes">Runes</a><a href="#charms">Charms</a><a href="#gems">Gems & crafting</a><a href="#mf">Magic Find</a><a href="#decision">Drop decisions</a><a href="#checklist">Checklist</a>
+</nav>
+
+<main>
+<section id="start" class="card">
+<h2>The simple answer: what to run now</h2>
+<div class="grid3">
+<div class="mini"><h3>Good Terror Zone</h3><p>Run it for the full 30-minute window. Best examples for you: Chaos Sanctuary, Worldstone Keep/Baal, Catacombs/Andariel, Durance/Mephisto, Travincal, and Cows.</p></div>
+<div class="mini"><h3>Bad Terror Zone</h3><p>Run <strong>Chaos Sanctuary</strong>. It is your best repeatable all-purpose route without Enigma: experience, elite packs, runes, bases, charms, and Diablo.</p></div>
+<div class="mini"><h3>Specific need</h3><p><strong>Cows</strong> for bases/gems; <strong>Andy/Meph</strong> for uniques; <strong>Countess</strong> for low-mid runes and Terror keys; <strong>Summoner/Nihlathak</strong> for the other keys.</p></div>
+</div>
+<div class="callout good"><strong>Your recommended default:</strong> good Hell Terror Zone → Chaos Sanctuary → one targeted route only when you need something specific. Avoid spending an entire session cycling every boss; specialization makes each run more efficient.</div>
+<div class="callout gold"><strong>Current-client note:</strong> Terror Zones now rotate every 30 minutes. In the 2026 client, Hell Terror Zones can also spawn Heralds; kill them when safe, but do not weaken your normal build solely to hunt them.</div>
+</section>
+
+<section id="snapshot" class="card">
+<h2>Your build snapshot & breakpoints</h2>
+<p class="muted">Vipermagi likely changed the totals you last reported. Use the editable fields below with the values shown in Advanced Stats; the guide saves them locally in this browser.</p>
+<div class="calc-row">
+<label><strong>Faster Cast Rate</strong><input id="fcr" type="number" value="114" min="0" max="500"></label>
+<label><strong>Faster Hit Recovery</strong><input id="fhr" type="number" value="110" min="0" max="500"></label>
+<label><strong>Magic Find</strong><input id="mfval" type="number" value="30" min="0" max="1000"></label>
+</div>
+<div id="breakpointResult" class="result" aria-live="polite"></div>
+<h3>Breakpoint rules that drive your gearing</h3>
+<div class="table-wrap"><table><thead><tr><th>Stat</th><th>Useful targets</th><th>Your gearing rule</th></tr></thead><tbody>
+<tr><td>Paladin FCR</td><td>75% → 125%</td><td>Never stop at 124%. Until you can reach 125, preserve at least 75 and spend the excess on MF, life, skills, or resistances.</td></tr>
+<tr><td>Paladin FHR</td><td>86% → 200%</td><td>86% is the practical target. Chasing 200% normally costs too much. Vipermagi + two Spirits should keep you comfortably above 86.</td></tr>
+<tr><td>Resistances</td><td>75%; your fire cap is 80%</td><td>Keep them capped for progression. Extra resistance still matters against Conviction and Lower Resist, so modest overcap is useful.</td></tr>
+<tr><td>Blocking</td><td>75% with Holy Shield active</td><td>Check after casting Holy Shield. Add Dexterity only as needed, especially if you later change shield bases.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="routes" class="card">
+<h2>Where to farm—and what each place is for</h2>
+<input id="zoneSearch" class="searchbar" type="search" placeholder="Filter zones, loot types, or notes…">
+<div class="table-wrap"><table id="zoneTable"><thead><tr><th>Route</th><th>Best for</th><th>Hammerdin fit</th><th>How to approach it</th></tr></thead><tbody>
+<tr><td><strong>Hell Terror Zone</strong></td><td>XP, broad loot, charms, uniques, runes</td><td><span class="success">Excellent when the zone is good</span></td><td>Full-clear dense zones. Prioritize elites, bosses, Heralds, and nearby containers. Skip cramped or dangerous rotations.</td></tr>
+<tr><td><strong>Chaos Sanctuary</strong></td><td>Everything: XP, high runes, uniques, bases</td><td><span class="success">Best default route</span></td><td>River waypoint → kill dense packs and seal bosses → Diablo. Use Redemption between packs. No Teleport required.</td></tr>
+<tr><td><strong>Hell Cows</strong></td><td>Socket bases, runes, charms, gems, jewels</td><td><span class="success">Very good</span></td><td>Use low/modest MF if bases are the goal. Kill volume matters more than bosses. Open chests and pick up all flawless gems.</td></tr>
+<tr><td><strong>Catacombs / Andariel</strong></td><td>Rings, amulets, common/mid-tier uniques</td><td>Good; route can be slow without Teleport</td><td>Excellent when terrorized. Otherwise run only if the path feels quick or you specifically want unique/set drops.</td></tr>
+<tr><td><strong>Durance / Mephisto</strong></td><td>Shako, Arachnid Mesh, HoZ, War Traveler, broad uniques</td><td>Good boss; slow access without Teleport</td><td>Strong when terrorized. If Durance 2 takes too long, Chaos gives better total value per minute.</td></tr>
+<tr><td><strong>Travincal</strong></td><td>Runes, gold, charms, jewelry</td><td>Good but dangerous</td><td>Fast fixed destination. Watch Hydras and Conviction. Keep merc alive and use Redemption immediately after the Council falls.</td></tr>
+<tr><td><strong>Countess</strong></td><td>Ral–Ist range, crafting runes, Key of Terror</td><td>Good but tower travel is variable</td><td>Farm for specific low/mid runes and keys—not as your primary Ber/Jah plan. Kill ghost packs encountered on safe floor space.</td></tr>
+<tr><td><strong>Arcane Sanctuary / Summoner</strong></td><td>Key of Hate, runes from ghosts</td><td>Good</td><td>Ghosts cannot drop items if killed over empty space, so pull them onto walkways. The four-direction search can be inconsistent.</td></tr>
+<tr><td><strong>Nihlathak</strong></td><td>Key of Destruction, XP, charms</td><td>Capable, but corpse explosion is dangerous</td><td>Use Redemption to remove corpses. Do not stand in a pile of dead monsters. Skip nasty combinations rather than risking XP.</td></tr>
+<tr><td><strong>Worldstone Keep / Baal</strong></td><td>XP, elite packs, broad loot</td><td>Strong, with caveats</td><td>Burning Souls can be dangerous. For Baal wave 2, kill the non-immune enemies with hammers, use Redemption, then Holy Bolt + merc.</td></tr>
+<tr><td><strong>The Pit</strong></td><td>Area-level-85 broad drops</td><td>Good</td><td>Easy access from Outer Cloister/Tamoe. Kill champion and unique packs; full clear if density is good.</td></tr>
+<tr><td><strong>Arachnid Lair</strong></td><td>Area-level-85 drops, quick runs</td><td>Very convenient</td><td>Always beside the Spider Forest waypoint. Short, repeatable, and ideal when you only have a few minutes.</td></tr>
+<tr><td><strong>Stony Tomb</strong></td><td>Area-level-85 drops</td><td>Good</td><td>Located in Rocky Waste. Good alternate when Chaos feels repetitive; search time varies.</td></tr>
+</tbody></table></div>
+<h3>Recommended session templates</h3>
+<div class="grid">
+<div class="mini"><h4>15–20 minutes</h4><div class="route"><span class="arrow">→</span><span>One Chaos run or repeated Arachnid Lair runs.</span></div></div>
+<div class="mini"><h4>30 minutes</h4><div class="route"><span class="arrow">→</span><span>Commit to the current good Terror Zone for its complete rotation.</span></div></div>
+<div class="mini"><h4>45–60 minutes</h4><div class="route"><span class="arrow">→</span><span>Good TZ → Chaos → one key route or Cows.</span></div></div>
+<div class="mini"><h4>Targeted unique session</h4><div class="route"><span class="arrow">→</span><span>Andy or Meph repeatedly; stop if travel time becomes most of the run.</span></div></div>
+</div>
+</section>
+
+<section id="targets" class="card">
+<h2>Your gear target ladder</h2>
+<div class="priority"><div class="num">1</div><div><span class="tag tag-now">Immediate</span><h3>Magefist or Trang-Oul’s Claws</h3><p>Either adds 20% FCR. Based on your likely ~114% total after Vipermagi, this pushes you safely through the 125% breakpoint. Magefist is especially comfortable for mana regeneration.</p></div></div>
+<div class="priority"><div class="num">2</div><div><span class="tag tag-now">Immediate</span><h3>Mercenary life-leech helmet</h3><p>Tal Rasha’s Horadric Crest, Vampire Gaze, Crown of Thieves, or Andariel’s Visage. This is the merc’s biggest survival gap if he still uses Blackhorn’s Face.</p></div></div>
+<div class="priority"><div class="num">3</div><div><span class="tag tag-now">Immediate</span><h3>Treachery + stronger Insight</h3><p>Make Treachery in the 3-socket ethereal Cuirass when you have Lem. Seek a 4-socket ethereal elite <em>polearm</em> for Insight: Thresher, Cryptic Axe, Great Poleaxe, or Giant Thresher.</p></div></div>
+<div class="priority"><div class="num">4</div><div><span class="tag tag-keep">Strong upgrades</span><h3>Shako, Arachnid Mesh, Gheed’s, War Traveler</h3><p>These improve skills, life/mana, FCR flexibility, and MF. Arachnid or 20-FCR gloves let you replace FCR jewelry without losing 125 FCR.</p></div></div>
+<div class="priority"><div class="num">5</div><div><span class="tag tag-long">Mid-term runewords</span><h3>Heart of the Oak and Call to Arms</h3><p><span class="rune">Ko Vex Pul Thul</span> in a 4-socket flail for HOTO. <span class="rune">Amn Ral Mal Ist Ohm</span> in a 5-socket low-requirement weapon for CTA.</p></div></div>
+<div class="priority"><div class="num">6</div><div><span class="tag tag-long">Transformative</span><h3>Enigma</h3><p><span class="rune">Jah Ith Ber</span> in a 3-socket Mage Plate is the defining Hammerdin upgrade. Teleport changes route efficiency more than almost any incremental damage upgrade.</p></div></div>
+<h3>Items you should never casually vendor</h3>
+<div class="grid">
+<div class="mini"><h4>Hammerdin / caster</h4><ul><li>Harlequin Crest</li><li>Arachnid Mesh</li><li>Mara’s Kaleidoscope</li><li>Stone of Jordan / Bul-Kathos ring</li><li>Herald of Zakarum</li><li>War Traveler</li><li>Gheed’s Fortune</li><li>Paladin Combat skillers</li></ul></div>
+<div class="mini"><h4>Merc / Uber set</h4><ul><li>Andariel’s Visage, Vampire Gaze, Tal mask</li><li>Guillaume’s Face</li><li>Dracul’s Grasp</li><li>Goblin Toe (you already saved one)</li><li>Raven Frost</li><li>Thundergod’s Vigor</li><li>Ethereal elite weapons/armor</li></ul></div>
+</div>
+</section>
+
+<section id="bases" class="card">
+<h2>Runeword bases: what to pick up</h2>
+<div class="table-wrap"><table><thead><tr><th>Base</th><th>Desired sockets / use</th><th>Keep rule</th></tr></thead><tbody>
+<tr><td>Flail</td><td>4os → HOTO</td><td>Keep one 4-socket. Low requirements are the point.</td></tr>
+<tr><td>Crystal Sword / Flail</td><td>5os → CTA</td><td>Keep a 5-socket low-requirement base. CTA weapon damage does not matter.</td></tr>
+<tr><td>Mage Plate</td><td>3os → Enigma</td><td>Keep the best non-ethereal one. Low 55 Strength requirement makes it ideal.</td></tr>
+<tr><td>Elite Paladin shield</td><td>4os → Spirit</td><td>35–45 all resistance, preferably Sacred Targe/Rondache. Your +42 Aerin Spirit is already excellent; upgrade only for block/defense.</td></tr>
+<tr><td>Ethereal elite polearm</td><td>4os → Insight</td><td>Thresher, Cryptic Axe, Great Poleaxe, Giant Thresher. Verify socket count; Insight does not use spears.</td></tr>
+<tr><td>Ethereal elite armor</td><td>3os → Treachery</td><td>Use the first practical base your merc can equip. Defense is secondary to Fade and attack speed.</td></tr>
+<tr><td>Ethereal elite armor</td><td>4os → Fortitude</td><td>Prefer ~650+ defense and manageable Strength. Be more selective because Lo is expensive.</td></tr>
+<tr><td>Monarch</td><td>4os → Spirit for alts/trade</td><td>Keep white/4os; not for your Paladin due to 156 Strength and no innate resistance.</td></tr>
+</tbody></table></div>
+<h3>Your known bases: current decisions</h3>
+<details open><summary>2-socket Giant Thresher</summary><div><strong>Vendor it.</strong> The failed socket roll locks it out of Insight and the useful merc runewords you are pursuing.</div></details>
+<details><summary>3-socket ethereal Cuirass</summary><div><strong>Use for Treachery.</strong> <span class="rune">Shael Thul Lem</span>. It is not glamorous, but Treachery’s effects matter far more than the base defense.</div></details>
+<details><summary>813-defense ethereal Sacred Armor</summary><div><strong>Keep for possible Fortitude.</strong> It requires 222 Strength while ethereal; your merc previously had 181. Do not commit Lo until he can equip it without ruining his helm setup.</div></details>
+<details><summary>Non-ethereal 464-defense 4os Boneweave with Nef</summary><div><strong>Do not use your first Lo here.</strong> It can become a 96% MF armor after clearing the socket, but otherwise it is an average player base with high requirements.</div></details>
+<details><summary>Two white Mage Plates</summary><div><strong>Keep at least one non-ethereal copy.</strong> A Mage Plate can receive at most three sockets and is a premier Enigma base. Cube a plain one only when you are ready to accept the result.</div></details>
+</section>
+
+<section id="runes" class="card">
+<h2>Rune strategy</h2>
+<div class="grid3">
+<div class="mini"><h3>Always useful</h3><p><strong>Ral, Amn, Sol, Hel, Lem</strong></p><p class="small muted">Crafting, Spirit/Insight/Lore, unsocketing, and Treachery.</p></div>
+<div class="mini"><h3>Never casually cube</h3><p><strong>Pul and above</strong></p><p class="small muted">Check recipes and trade value first. Cubing can destroy more value than it creates.</p></div>
+<div class="mini"><h3>Long-term targets</h3><p><strong>Vex, Ohm, Lo, Ber, Jah</strong></p><p class="small muted">HOTO, CTA, Fortitude, and Enigma.</p></div>
+</div>
+<div class="table-wrap"><table><thead><tr><th>Need</th><th>Best approach</th><th>Important reality</th></tr></thead><tbody>
+<tr><td>Ral–Ist and Key of Terror</td><td>Hell Countess</td><td>Her special rune drop reaches Ist. She is not an efficient dedicated Ber/Jah farm.</td></tr>
+<tr><td>High runes</td><td>Chaos, Cows, Travincal, dense Terror Zones</td><td>High runes are a volume-kill problem. Magic Find does not improve rune drops.</td></tr>
+<tr><td>Vex for HOTO</td><td>General high-density farming + trading</td><td>Trying to target one exact high rune is usually less efficient than accumulating tradable value.</td></tr>
+<tr><td>Jah + Ber for Enigma</td><td>Chaos/TZ/Cows/Trav + trade valuable finds</td><td>Enigma is a long project. Save valuable bases, keys, crafting packs, and perfect rolls that can be traded.</td></tr>
+</tbody></table></div>
+<div class="callout"><strong>Online advantage:</strong> trading is part of rune progression. A perfect or near-perfect charm, useful ethereal base, complete 3×3 keyset, or bundle of Ral + Perfect Amethyst + jewels can be more realistic progress toward Enigma than waiting for Jah and Ber to personally drop.</div>
+</section>
+
+<section id="charms" class="card">
+<h2>Charms worth keeping</h2>
+<div class="table-wrap"><table><thead><tr><th>Charm</th><th>Strong roll</th><th>Why keep it</th></tr></thead><tbody>
+<tr><td>Grand Charm</td><td>+1 Paladin Combat Skills</td><td>Your best normal damage charm; life or 12% FHR makes it better.</td></tr>
+<tr><td>Grand Charm</td><td>+1 desirable skill tree</td><td>Keep useful skillers for alts/trade even if not Paladin.</td></tr>
+<tr><td>Small Charm</td><td>18–20 life</td><td>Efficient survivability; combinations with resistance or mana are premium.</td></tr>
+<tr><td>Small Charm</td><td>6–7% MF</td><td>Best way to build MF without changing gear.</td></tr>
+<tr><td>Small Charm</td><td>4–5 all res or 10–11 single res</td><td>Lets you replace defensive gear while staying capped.</td></tr>
+<tr><td>Small Charm</td><td>5% FHR</td><td>Keep for future gear changes, but only carry enough to reach a breakpoint.</td></tr>
+<tr><td>Small Charm</td><td>3 max / 20 AR / 20 life</td><td>Extremely valuable physical-build charm; never vendor.</td></tr>
+<tr><td>Unique Grand Charm</td><td>Gheed’s Fortune</td><td>Major MF/gold/vendor-price utility.</td></tr>
+<tr><td>Unique Small Charm</td><td>Annihilus</td><td>Endgame all-skills, attributes, resistances, and XP.</td></tr>
+<tr><td>Unique Large Charm</td><td>Hellfire Torch</td><td>Eventually obtain a Paladin Torch via Ubers or trade.</td></tr>
+</tbody></table></div>
+<p><strong>Large charms:</strong> use them only when the roll solves an immediate need. Most ordinary large charms are less inventory-efficient than good small charms.</p>
+<p><strong>Reroll candidates:</strong> preserve high-level grand charms from Hell Baal, Diablo, Nihlathak, or sufficiently high-level Terror Zones. Three Perfect Gems reroll a magic charm while retaining its item level.</p>
+</section>
+
+<section id="gems" class="card">
+<h2>Gems, jewels, and crafting materials</h2>
+<div class="grid">
+<div class="mini"><h3>Pick up every flawless gem</h3><ul><li><strong>Perfect Amethyst:</strong> caster amulets and weapon socket recipe.</li><li><strong>Perfect Ruby:</strong> blood crafts and shield socket recipe.</li><li><strong>Perfect Topaz:</strong> armor socket recipe and MF socketing.</li><li><strong>Any Perfect Gem:</strong> magic charm rerolls.</li><li><strong>Perfect Skull:</strong> rare-item reroll recipes and charm rerolls.</li></ul></div>
+<div class="mini"><h3>Keep ordinary jewels</h3><p>Crafted items consume a jewel of any quality. Also inspect every jewel before using it: 15% IAS, high enhanced damage, all resistance, and useful combinations can be valuable.</p></div>
+</div>
+<h3>Recipes you will actually use</h3>
+<div class="table-wrap"><table><thead><tr><th>Purpose</th><th>Recipe</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Unsocket item</td><td><span class="rune">Hel + Town Portal scroll + socketed item</span></td><td>Preserves the base; destroys inserted contents.</td></tr>
+<tr><td>Socket normal weapon</td><td><span class="rune">Ral + Amn + Perfect Amethyst</span></td><td>Random sockets; plain non-superior white item only.</td></tr>
+<tr><td>Socket normal armor</td><td><span class="rune">Tal + Thul + Perfect Topaz</span></td><td>Random sockets; plain non-superior white item only.</td></tr>
+<tr><td>Socket normal shield</td><td><span class="rune">Tal + Amn + Perfect Ruby</span></td><td>Random sockets; plain non-superior white item only.</td></tr>
+<tr><td>Reroll magic charm</td><td><span class="rune">Magic charm + 3 Perfect Gems</span></td><td>Use a verified high-level charm when chasing skillers with high life.</td></tr>
+<tr><td>Craft caster amulet</td><td><span class="rune">Magic amulet + Ral + Perfect Amethyst + jewel</span></td><td>At level 81 you can make useful amulets, but level 93 is the usual point for gambling inputs that can always qualify for +2 class skills.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="mf" class="card">
+<h2>Magic Find strategy for your character</h2>
+<p><strong>Runes and base-item selection do not benefit from Magic Find.</strong> MF increases the chance that eligible equipment upgrades in quality to magic, rare, set, or unique. Do not weaken the character when hunting bases or runes.</p>
+<div class="grid3">
+<div class="mini"><h3>Progression / dangerous TZ</h3><p>Vipermagi, defensive circlet, capped resistances, ≥75 FCR (preferably 125), ≥86 FHR.</p></div>
+<div class="mini"><h3>Balanced farm</h3><p>Aim for roughly 100–200 MF while preserving clear speed. Add MF charms, Nagelring, or the Topaz crown one piece at a time.</p></div>
+<div class="mini"><h3>Boss swap</h3><p>Use your 3× Perfect Topaz crown, 29% MF amulet, Nagelring, or Skullder’s only when the boss remains fast and safe.</p></div>
+</div>
+<div class="callout gold"><strong>Breakpoint warning:</strong> if your current Vipermagi setup is approximately 114 FCR, swapping one 10-FCR ring for Nagelring leaves about 104—still the 75 breakpoint. Adding 20-FCR gloves would then produce about 124, which is still <em>not</em> 125. Always verify the exact total rather than assuming.</div>
+</section>
+
+<section id="decision" class="card">
+<h2>Fast drop-decision guide</h2>
+<div class="grid">
+<div class="mini"><h3>White / gray item</h3><ol><li>Is it ethereal?</li><li>Is it elite or a known low-requirement caster base?</li><li>Does it have the exact socket count for a valuable runeword?</li><li>For Paladin shields: does it have 35–45 all resistance?</li><li>For merc armor: can the merc actually meet the Strength requirement?</li></ol></div>
+<div class="mini"><h3>Rare / magic / unique item</h3><ol><li>Does it add +skills, FCR, life, resistances, MF, leech, IAS, Crushing Blow, or damage reduction?</li><li>Does it solve a breakpoint?</li><li>Is it useful for an Uber Smiter or common alt?</li><li>Is the roll near perfect?</li><li>When uncertain, stash one copy and ask before vendoring.</li></ol></div>
+</div>
+<p class="muted">For bases, a correct socket count is often more important than defense. For premium runewords, the expensive rune—not the base—is the resource you should protect.</p>
+</section>
+
+<section id="checklist" class="card">
+<h2>Personal farming checklist</h2>
+<div class="grid">
+<div class="mini checklist"><h3>Immediate</h3>
+<label><input type="checkbox"> Find Magefist or Trang-Oul’s Claws</label>
+<label><input type="checkbox"> Confirm exact FCR/FHR after Vipermagi</label>
+<label><input type="checkbox"> Make Treachery in the ethereal Cuirass</label>
+<label><input type="checkbox"> Find life-leech merc helmet</label>
+<label><input type="checkbox"> Find 4os ethereal elite polearm for Insight</label>
+<label><input type="checkbox"> Build a comfortable 100–200 MF farming loadout</label>
+</div>
+<div class="mini checklist"><h3>Long-term</h3>
+<label><input type="checkbox"> Reach and preserve 125 FCR</label>
+<label><input type="checkbox"> Find Shako and Arachnid Mesh</label>
+<label><input type="checkbox"> Make Heart of the Oak</label>
+<label><input type="checkbox"> Make Call to Arms</label>
+<label><input type="checkbox"> Acquire Paladin Torch and Annihilus</label>
+<label><input type="checkbox"> Make Enigma in a 3os Mage Plate</label>
+<label><input type="checkbox"> Make Fortitude for merc only after a worthy base</label>
+</div>
+</div>
+<p style="margin-top:14px"><button id="resetChecks" class="button">Reset checklist</button></p>
+</section>
+
+<footer class="card">
+<h2>Sources and version notes</h2>
+<p>This guide is tailored to the gear and progress you reported. Item rolls and your currently equipped jewelry may change the exact totals, so the in-game Advanced Stats panel remains the source of truth.</p>
+<ul>
+<li><a href="https://news.blizzard.com/en-us/article/24243863/rain-annihilation-in-reign-of-the-warlock">Blizzard: 2026 Terror Zone rotation and current endgame changes</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/24261478/diablo-ii-resurrected-ladder-season-14-now-live">Blizzard: Season 14 / Herald and Latent Sunder updates</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/23827590/diablo-ii-resurrected-ladder-season-two-has-concluded">Blizzard: Terror Zone levels and unlock rules</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/23788293/diablo-ii-resurrected-patch-2-4-ladder-now-live">Blizzard: area-level and mercenary changes</a></li>
+<li><a href="https://classic.battle.net/diablo2exp/items/runewords.shtml">The Arreat Summit: runeword rules</a></li>
+<li><a href="https://classic.battle.net/diablo2exp/items/cube.shtml">The Arreat Summit: Horadric Cube recipes</a></li>
+<li><a href="https://www.icy-veins.com/d2/farming-overview-and-guides">Icy Veins: D2R farming overview</a></li>
+<li><a href="https://www.purediablo.com/strategy/diablo-2-countess-guide">PureDiablo: Countess rune-drop guide</a></li>
+</ul>
+</footer>
+</main></div></div>
+
+<script>
+const fcrBreaks=[0,9,18,30,48,75,125],fhrBreaks=[0,7,15,27,48,86,200];
+function bracket(value,breaks){let current=breaks[0],next=null;for(const b of breaks){if(value>=b)current=b;if(value<b){next=b;break}}return{current,next}}
+function updateCalc(){
+ const fcr=Number(document.getElementById('fcr').value)||0,fhr=Number(document.getElementById('fhr').value)||0,mf=Number(document.getElementById('mfval').value)||0;
+ const a=bracket(fcr,fcrBreaks),b=bracket(fhr,fhrBreaks);
+ const fcrText=a.next?`${a.next-fcr}% more to reach ${a.next}%`:'at the maximum listed breakpoint';
+ const fhrText=b.next?`${b.next-fhr}% more to reach ${b.next}%`:'at the maximum listed breakpoint';
+ document.getElementById('breakpointResult').innerHTML=`<strong>FCR:</strong> ${fcr}% → operating at the <strong>${a.current}% breakpoint</strong>; ${fcrText}.<div class="meter"><span style="width:${Math.min(100,fcr/125*100)}%"></span></div><br><strong>FHR:</strong> ${fhr}% → operating at the <strong>${b.current}% breakpoint</strong>; ${fhrText}.<div class="meter"><span style="width:${Math.min(100,fhr/200*100)}%"></span></div><br><strong>MF:</strong> ${mf}%. ${mf<100?'Good for progression/base hunting; add MF gradually for unique farming.':mf<=250?'A strong balanced farming range.':'High MF—make sure it is not costing clear speed or survival.'}`;
+ localStorage.setItem('hammerdinStats',JSON.stringify({fcr,fhr,mf}));
+}
+['fcr','fhr','mfval'].forEach(id=>document.getElementById(id).addEventListener('input',updateCalc));
+try{const saved=JSON.parse(localStorage.getItem('hammerdinStats'));if(saved){document.getElementById('fcr').value=saved.fcr;document.getElementById('fhr').value=saved.fhr;document.getElementById('mfval').value=saved.mf}}catch(e){}
+updateCalc();
+document.getElementById('zoneSearch').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('#zoneTable tbody tr').forEach(row=>row.style.display=row.innerText.toLowerCase().includes(q)?'':'none')});
+const boxes=[...document.querySelectorAll('.checklist input[type=checkbox]')];
+boxes.forEach((box,i)=>{box.checked=localStorage.getItem('hammerdinCheck'+i)==='1';box.addEventListener('change',()=>localStorage.setItem('hammerdinCheck'+i,box.checked?'1':'0'))});
+document.getElementById('resetChecks').addEventListener('click',()=>boxes.forEach((box,i)=>{box.checked=false;localStorage.removeItem('hammerdinCheck'+i)}));
+</script>
+</body>
+</html>
